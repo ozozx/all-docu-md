@@ -1,7 +1,9 @@
 # Subject Menu
-* [ Markdown](markdown/Markdown.md)
-* [ HTML](html/HTML.md)
-* [ CSS](css/CSS.md)
-* [ Javascript](js/Javascript.md)
-* [ React](react/React.md)
-* [<i class ="nf-dev-python"></i> Python](python/Python.md)
+* [[Markdown| Markdown]]
+* [[YAML| YAML]]
+* [[HTML| HTML]]
+* [[CSS| CSS]]
+* [[Javascript| Javascript]]
+* [[React| React]]
+* [[Python| Python]]
+* [[QML| Quickshell]]

@@ -17,27 +17,29 @@ headlines:
 
 ###### Headline 6
 `###### Headline 6`
+#
 
-***
-
+### Text Effects
 *italicise*
 `*italicise*`
 `_italicise_`
-***
+
 **BOLD**
 `**BOLD**`
 `__BOLD__`
-***
+
 ***BOTH***
 `***BOTH***`
 `___BOTH___`
-***
+
 ~~Strikethrough~~
 `~~Strikethrough~~`
-***
+
 ==Highlight==
 `==Highlight==`
-***
+
+### Blocks Styles
+
 >"Quote block
 for several lines"
 
@@ -46,10 +48,10 @@ for several lines"
 for several lines"
 ```
 2 newlines to unbind Quote block
-***
+
 `code span`
 `` `code span` ``
-***
+
 ```
 code block
 for several lines
@@ -83,7 +85,7 @@ code
 ````
 `````
 
-***
+
 language specific code blocks:
 
 python example:
@@ -115,8 +117,10 @@ other supported languages[^1]:
 * cpp
 * lua
 
+^supported-prism-list
+
 [^1]: [full list of supported languages](https://prismjs.com/#supported-languages)
-***
+### Comments and Escapes
 you can make %%unseen%% comments in the markup file like so:
 `you can make %%unseen%% comments in the markup file like so:`
 

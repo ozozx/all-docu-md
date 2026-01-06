@@ -2,4 +2,4 @@
 [[Links]]
 [[Lists Tables and Sectioning]]
 
-markdown also allows for [HTML tags](../html/HTML.md)
+markdown also allows for [[HTML|HTML tags]]
