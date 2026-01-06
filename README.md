@@ -4,4 +4,4 @@
 * [ CSS](css/CSS.md)
 * [ Javascript](js/Javascript.md)
 * [ React](react/React.md)
-* [ Python](python/Python.md)
+* [<i class ="nf-dev-python"></i> Python](python/Python.md)

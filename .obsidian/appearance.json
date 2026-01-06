@@ -1,3 +1,6 @@
 {
-  "textFontFamily": "JetBrainsMono Nerd Font Mono"
+  "textFontFamily": "JetBrainsMono Nerd Font Mono",
+  "enabledCssSnippets": [
+    "style"
+  ]
 }
