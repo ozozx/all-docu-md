@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "markdown/Text Formatting.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Text Formatting"
+              "title": "README"
             },
             "group": "d3019b354210f38f"
           }
@@ -34,12 +34,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "markdown/Text Formatting.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Text Formatting"
+              "title": "README"
             },
             "group": "d3019b354210f38f"
           }
@@ -205,13 +205,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "ea58782cc49d7906",
+  "active": "0ded5805f4000135",
   "lastOpenFiles": [
+    "markdown/Text Formatting.md",
     "markdown/Markdown.md",
     "markdown/Lists Tables and Sectioning.md",
     "markdown/Links.md",
     "html/HTML.md",
-    "markdown/Text Formatting.md",
     "README.md",
     "html",
     "markdown",
