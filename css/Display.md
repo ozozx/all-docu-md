@@ -1,0 +1,5 @@
+![[Display Block]]
+![[css/15 Display/Inline|Inline]]
+![[Inline Block]]
+![[Display none]]
+![[css/15 Display/Exercise|Exercise]]
