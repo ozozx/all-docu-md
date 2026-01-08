@@ -69,10 +69,10 @@ using `|w` for width only will set the height according to the original aspect r
 ### Embed Search Results
 only works inside vault
 ```query
-Text Formatting
+path:markdown
 ```
 ````
 ```query
-Text Formatting
+path:markdown
 ```
 ````
