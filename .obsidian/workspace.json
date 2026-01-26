@@ -8,14 +8,40 @@
         "type": "tabs",
         "children": [
           {
-            "id": "886c311c95959d1c",
+            "id": "e65c61f913bb4251",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            },
+            "group": "c92886bba31caa21"
+          }
+        ]
+      },
+      {
+        "id": "33833523def90990",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65d984ef5a8c9b30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            },
+            "group": "c92886bba31caa21"
           }
         ]
       }
@@ -178,34 +204,39 @@
       "bases:Create new base": false
     }
   },
-  "active": "886c311c95959d1c",
+  "active": "e65c61f913bb4251",
   "lastOpenFiles": [
-    "css/Css Declare.md",
-    "css/3 Css Declare/Inline.md",
+    "html/HTML.md",
+    "html/Audio.md",
+    "html/Video.md",
+    "html/7 iframe/iframe.md",
+    "html/a.html",
+    "a.html",
+    "html/HTML Forms.md",
+    "html/Block vs Inline.md",
+    "html/Tables.md",
+    "html/HTML Fundamentals.md",
+    "html/Lists.md",
+    "html/1 Intro/Intro.md",
+    "README.md",
     "css/CSS.md",
-    "css/3 Css Declare/Exercise.md",
-    "css/Margins.md",
-    "css/6 Margins/Center.md",
     "css/Menu Building.md",
-    "css/18 Menu Building/Vertical Menu.md",
-    "css/18 Menu Building/Horizontal Menu.md",
     "css/Align.md",
     "css/Float.md",
-    "css/17 Align/Center.md",
-    "css/17 Align/Align Image.md",
-    "css/17 Align/Align Text.md",
     "css/Display.md",
-    "css/16 Float/Clear.md",
-    "css/16 Float/Float Div.md",
-    "css/16 Float/Float Image.md",
     "css/Position.md",
-    "css/15 Display/Exercise.md",
-    "css/15 Display/Display none.md",
-    "css/15 Display/Inline Block.md",
-    "css/15 Display/Inline.md",
-    "css/15 Display/Display Block.md",
-    "css/14 Position/Exercise.md",
-    "css/14 Position/Sticky.md",
+    "css/Lists.md",
+    "css/13 Lists/Lists.md",
+    "css/Tables.md",
+    "css/Links.md",
+    "css/10 Fonts/Fonts.md",
+    "css/Width Height.md",
+    "css/Text.md",
+    "css/7 Padding/Padding.md",
+    "css/Margins.md",
+    "css/4 Background/red.png",
+    "Untitled.base",
+    "css/4 Background/green.png",
     "css/18 Menu Building",
     "css/17 Align",
     "css/16 Float",
@@ -213,9 +244,6 @@
     "css/14 Position",
     "css/13 Lists",
     "css/12 Tables",
-    "css/11 Links",
-    "css/10 Fonts",
-    "css/9 Width Height",
     "html/2 HTML Fundamentals/blue.png",
     "html/2 HTML Fundamentals/red.png",
     "html/2 HTML Fundamentals/green.png",

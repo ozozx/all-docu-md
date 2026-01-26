@@ -21,5 +21,3 @@
                     <span style="font-size: 24pt; font-family: Arial; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><br></span>
                 </div>
 </div>
-
-[[HTML|<==]]

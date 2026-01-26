@@ -1,2 +1,5 @@
-![[Horizontal Menu]]
-![[Vertical Menu]]
+> [!example]- Horizontal Menu
+> ![[Horizontal Menu]]
+
+> [!example]- Vertical Menu
+> ![[Vertical Menu]]

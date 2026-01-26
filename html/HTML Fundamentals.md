@@ -1,9 +1,26 @@
-![[My First Page]]
-![[Elements]]
-![[Headlines]]
-![[Formatting]]
-![[Hyper-Links]]
-![[Images]]
-![[Image-Link]]
-![[Head]]
-![[Align]]
+> [!example]- My First Page
+> ![[My First Page]]
+
+> [!example]- Elements
+> ![[Elements]]
+
+> [!example]- Headlines
+> ![[Headlines]]
+
+> [!example]- Formatting
+> ![[Formatting]]
+
+> [!example]- Hyper-Links
+> ![[Hyper-Links]]
+
+> [!example]- Images
+> ![[Images]]
+
+> [!example]- Image-Link
+> ![[Image-Link]]
+
+> [!example]- Head
+> ![[Head]]
+
+> [!example]- Align
+> ![[Align]]

@@ -1,2 +1,5 @@
-![[Width & Height]]
-![[Max Height]]
+> [!example]- Width & Height
+> ![[Width & Height]]
+
+> [!example]- Max Height
+> ![[Max Height]]
