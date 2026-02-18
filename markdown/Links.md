@@ -8,6 +8,9 @@ Wikilink:
 ^md-alias
 
 ### External Links
+
+^d4f635
+
 URL:
 [Obsidian Help](https://help.obsidian.md)
 Obsidian URI:
@@ -44,8 +47,8 @@ add a `!` before an internal link to a page:
 ### Embed Blocks
 
 embed specific headings / blocks (select in dropdown menu):
-![[Links#^23b915]]
-`![[Links#^23b915]]`
+![[css/Links|Links]]
+`![[css/Links|Links]]`
 
 embed list by block identifier:
 in the target page add at the end of a block newline and `^blockname`

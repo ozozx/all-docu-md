@@ -4,44 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "74bd2da4719b76d6",
+        "id": "2bb7079378f15fc1",
         "type": "tabs",
         "children": [
           {
-            "id": "e65c61f913bb4251",
+            "id": "80fbf4e04cd170c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "markdown/Lists Tables and Sectioning.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Lists Tables and Sectioning"
             },
-            "group": "c92886bba31caa21"
+            "group": "aa5bf76b3d877e3c"
           }
         ]
       },
       {
-        "id": "33833523def90990",
+        "id": "cd7983a50178db23",
         "type": "tabs",
         "children": [
           {
-            "id": "65d984ef5a8c9b30",
+            "id": "d5c4b172f03983a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "markdown/Lists Tables and Sectioning.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Lists Tables and Sectioning"
             },
-            "group": "c92886bba31caa21"
+            "group": "aa5bf76b3d877e3c"
           }
         ]
       }
@@ -116,6 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +126,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -204,36 +205,39 @@
       "bases:Create new base": false
     }
   },
-  "active": "e65c61f913bb4251",
+  "active": "d5c4b172f03983a5",
   "lastOpenFiles": [
-    "html/HTML.md",
-    "html/Audio.md",
-    "html/Video.md",
+    "markdown/Markdown.md",
+    "markdown/Obsidian.md",
+    "markdown/Links.md",
+    "markdown/Lists Tables and Sectioning.md",
+    "markdown/Text Formatting.md",
+    "2026-02-15.md",
+    "README.md",
+    "python/Python.md",
+    "python",
+    "nodejs/NodeJS.md",
     "html/7 iframe/iframe.md",
+    "html/1 Intro/Intro.md",
+    "html/2 HTML Fundamentals/Hyper-Links.md",
+    "html/2 HTML Fundamentals/Image-Link.md",
+    "html/8 Video/Video pt_1.md",
+    "html/8 Video/Video pt_2.md",
+    "css/1 Intro/My First Page.md",
+    "css/17 Align/Center.md",
+    "css/17 Align/Align Text.md",
+    "css/17 Align/Align Image.md",
+    "css/16 Float/Float Image.md",
+    "css/16 Float/Float Div.md",
+    "css/16 Float/Clear.md",
+    "css/15 Display/Inline Block.md",
+    "css/15 Display/Inline.md",
+    "css/15 Display/Exercise.md",
+    "css/15 Display/Display none.md",
+    "nodejs",
+    "javascript",
     "html/a.html",
     "a.html",
-    "html/HTML Forms.md",
-    "html/Block vs Inline.md",
-    "html/Tables.md",
-    "html/HTML Fundamentals.md",
-    "html/Lists.md",
-    "html/1 Intro/Intro.md",
-    "README.md",
-    "css/CSS.md",
-    "css/Menu Building.md",
-    "css/Align.md",
-    "css/Float.md",
-    "css/Display.md",
-    "css/Position.md",
-    "css/Lists.md",
-    "css/13 Lists/Lists.md",
-    "css/Tables.md",
-    "css/Links.md",
-    "css/10 Fonts/Fonts.md",
-    "css/Width Height.md",
-    "css/Text.md",
-    "css/7 Padding/Padding.md",
-    "css/Margins.md",
     "css/4 Background/red.png",
     "Untitled.base",
     "css/4 Background/green.png",
@@ -241,9 +245,6 @@
     "css/17 Align",
     "css/16 Float",
     "css/15 Display",
-    "css/14 Position",
-    "css/13 Lists",
-    "css/12 Tables",
     "html/2 HTML Fundamentals/blue.png",
     "html/2 HTML Fundamentals/red.png",
     "html/2 HTML Fundamentals/green.png",

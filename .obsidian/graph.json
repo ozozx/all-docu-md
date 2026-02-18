@@ -1,5 +1,5 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
@@ -27,6 +27,27 @@
         "a": 1,
         "rgb": 5412832
       }
+    },
+    {
+      "query": "path:javascript ",
+      "color": {
+        "a": 1,
+        "rgb": 14606418
+      }
+    },
+    {
+      "query": "path:nodejs",
+      "color": {
+        "a": 1,
+        "rgb": 2402355
+      }
+    },
+    {
+      "query": "path:python  ",
+      "color": {
+        "a": 1,
+        "rgb": 906129
+      }
     }
   ],
   "collapse-display": true,
@@ -39,6 +60,6 @@
   "repelStrength": 10.546875,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.8164965809277264,
+  "scale": 0.24192491286747445,
   "close": true
 }

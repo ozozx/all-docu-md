@@ -2,7 +2,7 @@
     <body>
     <div style="color: #000000; background-color: #FFFFFF;">
         <h1>Links</h1>
-        <a href="https://www.appschool.co.il/" id="ls" style="color: purple; background-color: burlywood;">appschool</a>
+        <a href="https://appschoolfront.web.app" id="ls" style="color: purple; background-color: burlywood;">appschool</a>
 	</div>
     </body>
 </html>
@@ -38,7 +38,7 @@
     </head>
     <body>
         <h1>Links</h1>
-        <a href="https://www.appschool.co.il/" id="ls">appschool</a>
+        <a href="https://appschoolfront.web.app" id="ls">appschool</a>
     </body>
 </html>
 ```

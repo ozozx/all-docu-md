@@ -4,6 +4,7 @@
 * [[HTML| HTML]]
 * [[CSS| CSS]]
 * [[Javascript| Javascript]]
+* [[NodeJS| NodeJS]]
 * [[React| React]]
 * [[Python| Python]]
 * [[QML| Quickshell]]
