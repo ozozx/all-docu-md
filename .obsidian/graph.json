@@ -18,7 +18,7 @@
       "query": "path:markdown",
       "color": {
         "a": 1,
-        "rgb": 10048224
+        "rgb": 12094181
       }
     },
     {
@@ -39,7 +39,7 @@
       "query": "path:nodejs",
       "color": {
         "a": 1,
-        "rgb": 2402355
+        "rgb": 1334301
       }
     },
     {
@@ -47,6 +47,20 @@
       "color": {
         "a": 1,
         "rgb": 906129
+      }
+    },
+    {
+      "query": "path:obsidian ",
+      "color": {
+        "a": 1,
+        "rgb": 9002228
+      }
+    },
+    {
+      "query": "path:vim",
+      "color": {
+        "a": 1,
+        "rgb": 1019665
       }
     }
   ],
@@ -60,6 +74,6 @@
   "repelStrength": 10.546875,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.24192491286747445,
+  "scale": 1.2247448713915885,
   "close": true
 }

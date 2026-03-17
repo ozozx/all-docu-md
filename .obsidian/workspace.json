@@ -4,44 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "2bb7079378f15fc1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "80fbf4e04cd170c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "markdown/Lists Tables and Sectioning.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Lists Tables and Sectioning"
-            },
-            "group": "aa5bf76b3d877e3c"
-          }
-        ]
-      },
-      {
         "id": "cd7983a50178db23",
         "type": "tabs",
         "children": [
           {
-            "id": "d5c4b172f03983a5",
+            "id": "182f1cd2063e43aa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "markdown/Lists Tables and Sectioning.md",
-                "mode": "preview",
-                "source": true
+                "file": "obsidian/plugins/excalidraw/ExcalidrawMain.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Lists Tables and Sectioning"
-            },
-            "group": "aa5bf76b3d877e3c"
+              "icon": "excalidraw-icon",
+              "title": "ExcalidrawMain.excalidraw"
+            }
+          },
+          {
+            "id": "8241e68e59ea0aa0",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "imgs/Pasted Image 20260317080231_964.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted Image 20260317080231_964"
+            }
           }
         ]
       }
@@ -202,18 +190,46 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d5c4b172f03983a5",
+  "active": "182f1cd2063e43aa",
   "lastOpenFiles": [
-    "markdown/Markdown.md",
-    "markdown/Obsidian.md",
+    "obsidian/plugins/Excalidraw.md",
+    "obsidian/plugins/excalidraw/ExcalidrawMain.excalidraw.md",
+    "imgs/Pasted Image 20260317102328_362.png",
+    "imgs/Pasted Image 20260317080231_964.png",
+    "imgs/portrait_FALLBACK.png",
+    "obsidian/Obsidian.md",
+    "obsidian/plugins/excalidraw/Darkmode.excalidraw.md",
+    "obsidian/plugins/excalidraw/EditMenuOpen.excalidraw.md",
+    "obsidian/plugins/excalidraw/EditMenus.excalidraw.md",
+    "imgs/Pasted Image 20260317100015_628.png",
+    "imgs/Pasted Image 20260317095922_074.png",
+    "obsidian/plugins/excalidraw/Toolbar.excalidraw.md",
+    "obsidian/plugins/excalidraw/ObjectLibrary.excalidraw.md",
     "markdown/Links.md",
+    "obsidian/plugins/excalidraw/Links.excalidraw.md",
+    "obsidian/plugins/excalidraw/excalinote.md",
+    "imgs/Pasted Image 20260317091804_375.png",
+    "imgs/Pasted Image 20260317091555_769.png",
+    "imgs/Pasted Image 20260317091419_191.png",
+    "imgs/Pasted Image 20260317091237_987.png",
     "markdown/Lists Tables and Sectioning.md",
+    "markdown/Markdown.md",
+    "imgs/Pasted Image 20260317080607_221.png",
+    "obsidian/plugins/excalidraw/Drawing 2026-03-17 06.59.26.excalidraw.md",
+    "obsidian/Obsidian Plugins.md",
+    "obsidian/plugins/excalidraw",
+    "Excalidraw",
+    "obsidian/plugins",
+    "README.md",
+    "obsidian",
+    "vim/vim.md",
+    "imgs",
     "markdown/Text Formatting.md",
     "2026-02-15.md",
-    "README.md",
     "python/Python.md",
     "python",
     "nodejs/NodeJS.md",
@@ -221,35 +237,9 @@
     "html/1 Intro/Intro.md",
     "html/2 HTML Fundamentals/Hyper-Links.md",
     "html/2 HTML Fundamentals/Image-Link.md",
-    "html/8 Video/Video pt_1.md",
-    "html/8 Video/Video pt_2.md",
-    "css/1 Intro/My First Page.md",
-    "css/17 Align/Center.md",
-    "css/17 Align/Align Text.md",
-    "css/17 Align/Align Image.md",
-    "css/16 Float/Float Image.md",
-    "css/16 Float/Float Div.md",
-    "css/16 Float/Clear.md",
-    "css/15 Display/Inline Block.md",
-    "css/15 Display/Inline.md",
-    "css/15 Display/Exercise.md",
-    "css/15 Display/Display none.md",
     "nodejs",
     "javascript",
     "html/a.html",
-    "a.html",
-    "css/4 Background/red.png",
-    "Untitled.base",
-    "css/4 Background/green.png",
-    "css/18 Menu Building",
-    "css/17 Align",
-    "css/16 Float",
-    "css/15 Display",
-    "html/2 HTML Fundamentals/blue.png",
-    "html/2 HTML Fundamentals/red.png",
-    "html/2 HTML Fundamentals/green.png",
-    "html/2 HTML Fundamentals/browser-title.png",
-    "html/2 HTML Fundamentals/robot1.png",
-    "html/2 HTML Fundamentals/logo.png"
+    "a.html"
   ]
 }

@@ -1,5 +1,6 @@
 # Subject Menu
 * [[Markdown| Markdown]]
+* [[vim| Vim]]
 * [[YAML| YAML]]
 * [[HTML| HTML]]
 * [[CSS| CSS]]
