@@ -4,31 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "cd7983a50178db23",
+        "id": "b2d44eb078cacda2",
         "type": "tabs",
         "children": [
           {
-            "id": "182f1cd2063e43aa",
+            "id": "12ed5be5ef9c16da",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "obsidian/plugins/excalidraw/ExcalidrawMain.excalidraw.md"
+                "file": "obsidian/Obsidian.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "ExcalidrawMain.excalidraw"
-            }
-          },
-          {
-            "id": "8241e68e59ea0aa0",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "imgs/Pasted Image 20260317080231_964.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted Image 20260317080231_964"
+              "icon": "lucide-file",
+              "title": "Obsidian"
             }
           }
         ]
@@ -194,14 +184,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "182f1cd2063e43aa",
+  "active": "12ed5be5ef9c16da",
   "lastOpenFiles": [
     "obsidian/plugins/Excalidraw.md",
+    "obsidian/Obsidian.md",
+    "imgs/Pasted Image 20260317080231_964.png",
     "obsidian/plugins/excalidraw/ExcalidrawMain.excalidraw.md",
     "imgs/Pasted Image 20260317102328_362.png",
-    "imgs/Pasted Image 20260317080231_964.png",
     "imgs/portrait_FALLBACK.png",
-    "obsidian/Obsidian.md",
     "obsidian/plugins/excalidraw/Darkmode.excalidraw.md",
     "obsidian/plugins/excalidraw/EditMenuOpen.excalidraw.md",
     "obsidian/plugins/excalidraw/EditMenus.excalidraw.md",

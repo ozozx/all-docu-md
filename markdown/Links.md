@@ -15,6 +15,11 @@ URL:
 [Obsidian Help](https://help.obsidian.md)
 Obsidian URI:
 [Shit I Want Done](obsidian://open?vault=know-bsidian&file=SHIT%20I%20WANT%20DONE/All%20the%20Shit.md)
+*obsidian URI* is constructed in the following format:
+> header: `obsidian://open?`
+> vault parameter: `vault=`*vault-name*
+> note parameter (optional, spaces in URI are replaced with `%20`): `&file=`*path_to/file.md*
+the destination vault must be imported to obsidian for the link to work:
 `[Shit I Want Done](obsidian://open?vault=know-bsidian&file=SHIT%20I%20WANT%20DONE/All%20the%20Shit.md)`
 
 spaces must be swapped with `%20`
