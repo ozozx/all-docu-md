@@ -65,10 +65,10 @@
 > `git diff <commit> --stat` OR `git show <commit> --stat`
 > > [!info] Ways to refer to a commit
 > > #### Every time we say `<commit>`, you can use any of these:
-> > * a branch `main`
+> > * a branch `master`
 > > * a tag `v0.1`
 > > * a commit ID `3e887ab`
-> > * a remote branch `origin/main`
+> > * a remote branch `origin/master`
 > > * current commit `HEAD`
 > > * 3 commits ago `HEAD^^^` or `HEAD~3`
 
@@ -99,8 +99,8 @@
 
 > [!tldr]- Code Archaeology:
 > #### Look at a branch's history:
-> `git log main`
-> `git log --graph main`
+> `git log master`
+> `git log --graph master`
 > `git log --oneline`
 > #### Show every commit that modified a file:
 > `git log <file>`
@@ -114,20 +114,20 @@
 > [!tip]- Combine Diverged Branches:
 > #### Combine with rebase:
 > `git switch banana`
-> `git rebase main`
+> `git rebase master`
 > Before:
 > ![[git/git-diagrams.excalidraw.md#^group=oWZi8oBV|before-combine]]
 > After:
 > ![[git/git-diagrams.excalidraw.md#^group=RWsTWMD1cCohdZIb7P5-H|after-rebase]]
 > #### Combine with merge:
-> `git switch main`
+> `git switch master`
 > `git merge banana`
 > Before:
 > ![[git/git-diagrams.excalidraw.md#^group=oWZi8oBV|before-combine]]
 > After:
 > ![[git/git-diagrams.excalidraw.md#^group=oY7E8ywI27d82KrCsdQle|after-merge]]
 > #### Combine with squash merge:
-> `git switch main`
+> `git switch master`
 > `git merge --squash banana`
 > `git commit`
 > Before:
@@ -135,7 +135,7 @@
 > After:
 > ![[git/git-diagrams.excalidraw.md#^group=sUcuiUzxNWRo0RzrcgZE6|after-squash]]
 > #### Bring a branch up to date with another branch (aka "fast-forward merge"):
-> `git switch main`
+> `git switch master`
 > `git merge banana`
 > Before:
 > ![[git/git-diagrams.excalidraw.md#^group=J2ZLJ_HdRJZgBe9mkprtS|before-ff-merge]]
@@ -156,8 +156,8 @@
 > `git remote add <name> <url>`
 
 > [!todo]- Push Your Changes:
-> #### Push the `main` branch to the remote `origin`:
-> `git push origin main`
+> #### Push the `master` branch to the remote `origin`:
+> `git push origin master`
 > #### Push the current branch to its remote "tracking branch":
 > `git push`
 > #### Push a branch that you've never pushed before:
@@ -169,11 +169,11 @@
 
 > [!info]- Pull Changes:
 > #### Fetch changes (but don't change any of your local branches):
-> `git fetch origin main`
+> `git fetch origin master`
 > #### Fetch changes and then rebase your current branch:
 > `git pull --rebase`
 > #### Fetch changes and then merge them into your current branch:
-> `git pull origin main` OR `git pull`
+> `git pull origin master` OR `git pull`
 
 > [!cite]- Configure Git:
 > #### Set a config option:
