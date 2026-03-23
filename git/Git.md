@@ -194,3 +194,5 @@
 > `~/.gitconfig`
 > #### List of files to ignore:
 > `.gitignore`
+
+[source](https://git-scm.com/cheat-sheet)
