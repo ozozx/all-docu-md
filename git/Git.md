@@ -160,6 +160,8 @@
 > `git push origin master`
 > #### Push the current branch to its remote "tracking branch":
 > `git push`
+> #### Set the current branch's remote "tracking branch":
+> `git push --set-upstream origin <branch>`
 > #### Push a branch that you've never pushed before:
 > `git push -u origin <name>`
 > #### Force push:
