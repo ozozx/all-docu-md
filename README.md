@@ -1,5 +1,6 @@
 # Subject Menu
-* [[Markdown| Markdown]]
+* [[Basic formatting syntax| Markdown]]
+* [[Home|Obsidian]]
 * [[Git| Git]]
 * [[vim| Vim]]
 * [[YAML| YAML]]

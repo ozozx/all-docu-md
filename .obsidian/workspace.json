@@ -4,39 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b2d44eb078cacda2",
+        "id": "340ab192c1198b5c",
         "type": "tabs",
         "children": [
           {
-            "id": "6afe8aa6633b2584",
+            "id": "d1a4070c91b57017",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "git/Git.md",
-                "mode": "source",
-                "source": false
+                "file": "imgs/excal_name_bonc.png"
               },
-              "icon": "lucide-file",
-              "title": "Git"
-            }
-          },
-          {
-            "id": "9ad7852f0e59682a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "git/Git.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Git"
+              "icon": "lucide-image",
+              "title": "excal_name_bonc"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,17 +92,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "obsidian/Community Plugins/dice roller/Modifiers/Min-Max.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for Min-Max"
             }
           },
           {
@@ -128,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "obsidian/Community Plugins/dice roller/List Rollers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from List Rollers"
             }
           },
           {
@@ -171,20 +154,43 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "obsidian/Community Plugins/dice roller/List Rollers.md",
                 "followCursor": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of List Rollers"
+            }
+          },
+          {
+            "id": "c251514a37093997",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "obsidian/Obsidian Quick Terms.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          },
+          {
+            "id": "319a5d5cfe5d45aa",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {},
+              "icon": "dices",
+              "title": "Dice Tray"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 355.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -196,55 +202,62 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "publish:Publish changes...": false,
+      "random-note:Open random note": false,
+      "zk-prefixer:Create new unique note": false,
+      "workspaces:Manage workspace layouts": false,
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "9ad7852f0e59682a",
+  "active": "ea58782cc49d7906",
   "lastOpenFiles": [
-    "git/git-diagrams.excalidraw.md",
-    "git/Git.md",
-    "git/Git.md~",
-    "markdown/Lists Tables and Sectioning.md",
-    "README.md",
-    "vim/vim.md",
-    "markdown/Text Formatting.md",
-    "git",
-    "html/3 Lists/Ordered Lists.md",
-    "html/Lists.md",
-    "html/HTML.md",
-    "markdown/Markdown.md",
-    "markdown/Links.md",
-    "obsidian/Obsidian.md",
-    "obsidian/plugins/Excalidraw.md",
-    "imgs/Pasted Image 20260317080231_964.png",
-    "obsidian/plugins/excalidraw/ExcalidrawMain.excalidraw.md",
-    "imgs/Pasted Image 20260317102328_362.png",
-    "imgs/portrait_FALLBACK.png",
-    "obsidian/plugins/excalidraw/Darkmode.excalidraw.md",
-    "obsidian/plugins/excalidraw/EditMenuOpen.excalidraw.md",
-    "obsidian/plugins/excalidraw/EditMenus.excalidraw.md",
-    "imgs/Pasted Image 20260317100015_628.png",
-    "imgs/Pasted Image 20260317095922_074.png",
-    "obsidian/plugins/excalidraw/Toolbar.excalidraw.md",
-    "obsidian/plugins/excalidraw/ObjectLibrary.excalidraw.md",
-    "obsidian/plugins/excalidraw/Links.excalidraw.md",
-    "obsidian/plugins/excalidraw/excalinote.md",
-    "imgs/Pasted Image 20260317091804_375.png",
-    "imgs/Pasted Image 20260317091555_769.png",
-    "imgs/Pasted Image 20260317091419_191.png",
-    "imgs/Pasted Image 20260317091237_987.png",
-    "imgs/Pasted Image 20260317080607_221.png",
-    "obsidian/plugins/excalidraw/Drawing 2026-03-17 06.59.26.excalidraw.md",
-    "obsidian/Obsidian Plugins.md",
-    "obsidian/plugins/excalidraw",
-    "Excalidraw",
-    "obsidian/plugins",
-    "obsidian",
-    "imgs",
-    "2026-02-15.md",
-    "python/Python.md",
-    "python",
-    "nodejs",
-    "javascript"
+    "imgs/excal_three_dot_menu.png",
+    "imgs/excal_as_md.png",
+    "obsidian/Community Plugins/excalidraw/Excalidraw.md",
+    "obsidian/Community Plugins/dataview/FAQ and Resources/Frequently Asked Questions.md",
+    "obsidian/Community Plugins/dataview/FAQ and Resources/Developing Against Dataview.md",
+    "obsidian/Community Plugins/excalidraw/ExcalidrawMain.excalidraw.md",
+    "imgs/excal_name_bonc.png",
+    "imgs/excal_right_click_menu.png",
+    "obsidian/Community Plugins/dice roller/Table Rollers.md",
+    "obsidian/Community Plugins/dice roller/Section Rollers.md",
+    "obsidian/Community Plugins/dice roller/Saving Results.md",
+    "obsidian/Community Plugins/dice roller/Dice Roller Settings.md",
+    "obsidian/Community Plugins/dice roller/List Rollers.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Sort.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Re-roll.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Modifiers.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Modifiers.md~",
+    "obsidian/Community Plugins/dice roller/Modifiers/Min-Max.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Make Unique.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Keep Lowest.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Keep Highest.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Explode and Combine.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Explode.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Drop Lowest.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Drop Highest.md",
+    "obsidian/Community Plugins/dice roller/Modifiers/Custom Percent.md",
+    "obsidian/Community Plugins/dice roller/example loot table.md",
+    "obsidian/Community Plugins/dice roller/Dice Roller Overview.md",
+    "obsidian/Community Plugins/dice roller/Dice roller.md",
+    "obsidian/Community Plugins/dice roller/Dice-Mod.md",
+    "imgs/tab-stacks.gif",
+    "imgs/grouped-book-example.png",
+    "obsidian/Community Plugins/dataview/Query Language Reference/Structure of a Query.md~",
+    "obsidian/Community Plugins/dataview/Query Language Reference/Sources.md~",
+    "obsidian/Community Plugins/dataview/Query Language Reference/Query Types.md~",
+    "imgs/calendar_query_type.png",
+    "obsidian/Community Plugins/dataview/Query Language Reference/Functions.md~",
+    "obsidian/Community Plugins/dataview/Query Language Reference/Expressions.md~",
+    "obsidian/Community Plugins/dataview/JavaScript Reference/Overview.md~",
+    "obsidian/Community Plugins/dataview/JavaScript Reference/Data Arrays.md~",
+    "obsidian/Community Plugins/dataview/JavaScript Reference/Codeblock Reference.md~",
+    "obsidian/Community Plugins/dataview/FAQ and Resources/Examples.md~",
+    "obsidian/favicon-96x96.png",
+    "obsidian/Attachments/application-installer-current-version.png",
+    "obsidian/Attachments/Windows-OS-DateTime.png",
+    "Untitled.canvas"
   ]
 }

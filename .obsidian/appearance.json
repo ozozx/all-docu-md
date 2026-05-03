@@ -1,6 +1,7 @@
 {
-  "textFontFamily": "JetBrainsMono Nerd Font Mono",
+  "textFontFamily": "FiraCode Nerd Font Mono,JetBrainsMono Nerd Font Mono",
   "enabledCssSnippets": [
     "style"
-  ]
+  ],
+  "theme": "system"
 }

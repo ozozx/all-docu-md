@@ -1,3 +1,8 @@
 {
-  "attachmentFolderPath": "imgs"
+  "attachmentFolderPath": "imgs",
+  "alwaysUpdateLinks": true,
+  "livePreview": false,
+  "defaultViewMode": "preview",
+  "vimMode": false,
+  "newFileLocation": "current"
 }
