@@ -1,4 +1,4 @@
-the following repository is meant to compose all subject I have and will learn, and will ever need to work with. it will gradually grow as I learn more.
+the following repository is meant to compose all subjects I have and will learn, and will ever need to work with. it will gradually grow as I learn more.
 this repository is best used when opened through obsidian, and displayed with the nerdfont of your choice.
 
 # Subject Menu

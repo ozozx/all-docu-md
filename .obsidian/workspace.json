@@ -229,6 +229,7 @@
   },
   "active": "f9973ef7971df5b4",
   "lastOpenFiles": [
+    "README.md~",
     "lua/9-The Complete Syntax of Lua.md~",
     "lua/3-The Language.md",
     "lua/3-The Language.md~",
@@ -253,7 +254,6 @@
     "lua/Lua.md~",
     "lua/The Application Program Interface.md~",
     "lua/The Standard Libraries.md~",
-    "lua/Basic Concepts.md~",
     "git/Git.md",
     "imgs/excal_name_bonc.png",
     "imgs/excal_three_dot_menu.png",
