@@ -4,19 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "340ab192c1198b5c",
+        "id": "aaf502380c44a98d",
         "type": "tabs",
         "children": [
           {
-            "id": "d1a4070c91b57017",
+            "id": "f9973ef7971df5b4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "imgs/excal_name_bonc.png"
+                "file": "lua/9-The Complete Syntax of Lua.md",
+                "mode": "preview",
+                "source": true
               },
-              "icon": "lucide-image",
-              "title": "excal_name_bonc"
+              "icon": "lucide-file",
+              "title": "9-The Complete Syntax of Lua"
+            }
+          },
+          {
+            "id": "c2b32262ad06923f",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.lua.org/manual/5.5/manual.html#pdf-LUA_GCPARAM",
+                "title": "Lua 5.5 Reference Manual",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Lua 5.5 Reference Manual"
             }
           }
         ]
@@ -92,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian/Community Plugins/dice roller/Modifiers/Min-Max.md",
+                "file": "lua/9-The Complete Syntax of Lua.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +118,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Min-Max"
+              "title": "Backlinks for 9-The Complete Syntax of Lua"
             }
           },
           {
@@ -111,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian/Community Plugins/dice roller/List Rollers.md",
+                "file": "lua/9-The Complete Syntax of Lua.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from List Rollers"
+              "title": "Outgoing links from 9-The Complete Syntax of Lua"
             }
           },
           {
@@ -154,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian/Community Plugins/dice roller/List Rollers.md",
-                "followCursor": false,
+                "file": "lua/9-The Complete Syntax of Lua.md",
+                "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of List Rollers"
+              "title": "Outline of 9-The Complete Syntax of Lua"
             }
           },
           {
@@ -211,15 +227,41 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ea58782cc49d7906",
+  "active": "f9973ef7971df5b4",
   "lastOpenFiles": [
+    "lua/9-The Complete Syntax of Lua.md~",
+    "lua/3-The Language.md",
+    "lua/3-The Language.md~",
+    "lua/1-Introduction.md",
+    "lua/5-The Auxiliary Library.md",
+    "lua/9-The Complete Syntax of Lua.md",
+    "lua/8-Incompatibilities with the Previous Version.md",
+    "lua/4-The Application Program Interface.md",
+    "lua/7-Lua Standalone.md",
+    "lua/6-The Standard Libraries.md",
+    "README.md",
+    "lua/6-The Standard Libraries.md~",
+    "lua/5-The Auxiliary Library.md~",
+    "lua/9-The Complete Syntax.md",
+    "lua/2-Basic Concepts.md",
+    "lua/4-The Application Program Interface.md~",
+    "lua/Lua.md",
+    "lua/8-Incompatibilities with the Previous Version.md~",
+    "obsidian/Linking notes and files/Internal links.md",
+    "obsidian/Attachments/link-block-heading.png",
+    "lua/7-Lua Standalone.md~",
+    "lua/Lua.md~",
+    "lua/The Application Program Interface.md~",
+    "lua/The Standard Libraries.md~",
+    "lua/Basic Concepts.md~",
+    "git/Git.md",
+    "imgs/excal_name_bonc.png",
     "imgs/excal_three_dot_menu.png",
     "imgs/excal_as_md.png",
     "obsidian/Community Plugins/excalidraw/Excalidraw.md",
     "obsidian/Community Plugins/dataview/FAQ and Resources/Frequently Asked Questions.md",
     "obsidian/Community Plugins/dataview/FAQ and Resources/Developing Against Dataview.md",
     "obsidian/Community Plugins/excalidraw/ExcalidrawMain.excalidraw.md",
-    "imgs/excal_name_bonc.png",
     "imgs/excal_right_click_menu.png",
     "obsidian/Community Plugins/dice roller/Table Rollers.md",
     "obsidian/Community Plugins/dice roller/Section Rollers.md",
@@ -228,36 +270,11 @@
     "obsidian/Community Plugins/dice roller/List Rollers.md",
     "obsidian/Community Plugins/dice roller/Modifiers/Sort.md",
     "obsidian/Community Plugins/dice roller/Modifiers/Re-roll.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Modifiers.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Modifiers.md~",
-    "obsidian/Community Plugins/dice roller/Modifiers/Min-Max.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Make Unique.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Keep Lowest.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Keep Highest.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Explode and Combine.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Explode.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Drop Lowest.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Drop Highest.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Custom Percent.md",
-    "obsidian/Community Plugins/dice roller/example loot table.md",
-    "obsidian/Community Plugins/dice roller/Dice Roller Overview.md",
-    "obsidian/Community Plugins/dice roller/Dice roller.md",
-    "obsidian/Community Plugins/dice roller/Dice-Mod.md",
     "imgs/tab-stacks.gif",
     "imgs/grouped-book-example.png",
-    "obsidian/Community Plugins/dataview/Query Language Reference/Structure of a Query.md~",
-    "obsidian/Community Plugins/dataview/Query Language Reference/Sources.md~",
-    "obsidian/Community Plugins/dataview/Query Language Reference/Query Types.md~",
     "imgs/calendar_query_type.png",
-    "obsidian/Community Plugins/dataview/Query Language Reference/Functions.md~",
-    "obsidian/Community Plugins/dataview/Query Language Reference/Expressions.md~",
-    "obsidian/Community Plugins/dataview/JavaScript Reference/Overview.md~",
-    "obsidian/Community Plugins/dataview/JavaScript Reference/Data Arrays.md~",
-    "obsidian/Community Plugins/dataview/JavaScript Reference/Codeblock Reference.md~",
-    "obsidian/Community Plugins/dataview/FAQ and Resources/Examples.md~",
     "obsidian/favicon-96x96.png",
     "obsidian/Attachments/application-installer-current-version.png",
-    "obsidian/Attachments/Windows-OS-DateTime.png",
     "Untitled.canvas"
   ]
 }

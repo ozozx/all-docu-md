@@ -1,5 +1,6 @@
 [
   "obsidian-excalidraw-plugin",
   "obsidian-dice-roller",
-  "dataview"
+  "dataview",
+  "obsidian-cursor-location-plugin"
 ]

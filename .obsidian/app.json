@@ -4,5 +4,6 @@
   "livePreview": false,
   "defaultViewMode": "preview",
   "vimMode": false,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "readableLineLength": true
 }
