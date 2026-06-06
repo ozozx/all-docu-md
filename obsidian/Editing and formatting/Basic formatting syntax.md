@@ -186,6 +186,28 @@ You can also escape the URL by wrapping it with angled brackets (`< >`).
 [My Note](<obsidian://open?vault=MainVault&file=My Note.md>)
 ```
 
+### Recurring external links
+
+you can reuse a link destination by adding the address at the bottom (like a [[#Footnotes|footnote]]) by adding the link name at the bottom with a colon and the address following it. example:
+
+[site1]
+[site1]
+[site2](https://www.pinterest.com/)
+[site1]
+
+```md
+[site1]
+[site1]
+[site2](https://www.pinterest.com/)
+[site1]
+
+...
+
+[site1]: https://imgur.com/
+```
+
+[site1]: https://imgur.com/
+
 ## External images
 
 You can add images with external URLs, by adding a `!` symbol before an [[#External links|external link]].

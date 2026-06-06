@@ -69,9 +69,16 @@
         "a": 1,
         "rgb": 11736084
       }
+    },
+    {
+      "query": "path:hyprland  ",
+      "color": {
+        "a": 1,
+        "rgb": 5422560
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -81,6 +88,6 @@
   "repelStrength": 10.546875,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.16128327524498282,
+  "scale": 0.544331053951817,
   "close": true
 }

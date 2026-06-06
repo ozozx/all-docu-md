@@ -48,7 +48,7 @@ Auto-update to the latest [[Early access versions]]. These versions include new 
 
 ### Language
 
-Select your preferred language for the Obsidian interface. Select **[[Translations|Learn how to add a new language to Obsidian]]** to contribute a translation.
+Select your preferred language for the Obsidian interface. Select **[Learn how to add a new language to Obsidian](https://obsidian.md/help/translations)** to contribute a translation.
 
 ### Help
 

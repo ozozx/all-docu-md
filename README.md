@@ -3,7 +3,7 @@ this repository is best used when opened through obsidian, and displayed with th
 
 # Subject Menu
 * [[Basic formatting syntax| Markdown]]
-* [[Home|Obsidian]]
+* [[Home| Obsidian]]
 * [[Git| Git]]
 * [[vim| Vim]]
 * [[YAML| YAML]]
@@ -14,4 +14,5 @@ this repository is best used when opened through obsidian, and displayed with th
 * [[React| React]]
 * [[Python| Python]]
 * [[Lua| Lua]]
+* [[Hyprland| Hyprland]]
 * [[QML| Quickshell]]

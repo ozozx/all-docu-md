@@ -5,5 +5,5 @@
   "defaultViewMode": "preview",
   "vimMode": false,
   "newFileLocation": "current",
-  "readableLineLength": true
+  "readableLineLength": false
 }

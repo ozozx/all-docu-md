@@ -4,36 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "aaf502380c44a98d",
+        "id": "792475b3b15a3f65",
         "type": "tabs",
         "children": [
           {
-            "id": "f9973ef7971df5b4",
+            "id": "fa3d1009645e588f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lua/9-The Complete Syntax of Lua.md",
+                "file": "hyprland/Contributing and Debugging/Translations.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Translations"
+            },
+            "group": "99876f4887d47b2f"
+          }
+        ]
+      },
+      {
+        "id": "378b385c1fa83e45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86c93f2123573072",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hyprland/Contributing and Debugging/Translations.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "9-The Complete Syntax of Lua"
-            }
-          },
-          {
-            "id": "c2b32262ad06923f",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.lua.org/manual/5.5/manual.html#pdf-LUA_GCPARAM",
-                "title": "Lua 5.5 Reference Manual",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Lua 5.5 Reference Manual"
-            }
+              "title": "Translations"
+            },
+            "group": "99876f4887d47b2f"
           }
         ]
       }
@@ -92,7 +100,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "32655eb027841fcb",
@@ -108,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lua/9-The Complete Syntax of Lua.md",
+                "file": "hyprland/Contributing and Debugging/Translations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +127,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 9-The Complete Syntax of Lua"
+              "title": "Backlinks for Translations"
             }
           },
           {
@@ -127,12 +136,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lua/9-The Complete Syntax of Lua.md",
+                "file": "hyprland/Useful Utilities/Phone connect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 9-The Complete Syntax of Lua"
+              "title": "Outgoing links from Phone connect"
             }
           },
           {
@@ -170,13 +179,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lua/9-The Complete Syntax of Lua.md",
+                "file": "hyprland/Contributing and Debugging/Translations.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 9-The Complete Syntax of Lua"
+              "title": "Outline of Translations"
             }
           },
           {
@@ -227,54 +236,54 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f9973ef7971df5b4",
+  "active": "fa3d1009645e588f",
   "lastOpenFiles": [
-    "README.md~",
-    "lua/9-The Complete Syntax of Lua.md~",
-    "lua/3-The Language.md",
-    "lua/3-The Language.md~",
-    "lua/1-Introduction.md",
-    "lua/5-The Auxiliary Library.md",
-    "lua/9-The Complete Syntax of Lua.md",
-    "lua/8-Incompatibilities with the Previous Version.md",
-    "lua/4-The Application Program Interface.md",
-    "lua/7-Lua Standalone.md",
-    "lua/6-The Standard Libraries.md",
-    "README.md",
-    "lua/6-The Standard Libraries.md~",
-    "lua/5-The Auxiliary Library.md~",
-    "lua/9-The Complete Syntax.md",
-    "lua/2-Basic Concepts.md",
-    "lua/4-The Application Program Interface.md~",
-    "lua/Lua.md",
-    "lua/8-Incompatibilities with the Previous Version.md~",
+    "hyprland/Contributing and Debugging/Translations.md~",
+    "hyprland/Contributing and Debugging/Tests.md",
+    "hyprland/Contributing and Debugging/Tests.md~",
+    "hyprland/Contributing and Debugging/PR Guidelines.md",
+    "hyprland/Contributing and Debugging/PR Guidelines.md~",
+    "hyprland/Contributing and Debugging/Issue Guidelines.md",
+    "hyprland/Contributing and Debugging/Issue Guidelines.md~",
+    "hyprland/Contributing and Debugging/Translations.md",
+    "hyprland/Contributing and Debugging/Contributing and Debugging.md",
+    "hyprland/Contributing and Debugging/Contributing and Debugging.md~",
+    "hyprland/Connect.md",
+    "hyprland/FAQ.md",
+    "hyprland/FAQ.md~",
+    "hyprland/Crashes and Bugs.md",
+    "hyprland/Crashes and Bugs.md~",
+    "hyprland/IPC.md",
+    "hyprland/IPC.md~",
+    "hyprland/Nvidia.md",
+    "hyprland/Nix/Nix.md",
+    "hyprland/Nvidia.md~",
+    "hyprland/Nix/Contributing and Debugging.md",
+    "hyprland/Nix/Plugins.md",
+    "hyprland/Nix/Contributing and Debugging.md~",
+    "hyprland/Nix/Options & Overrides.md",
+    "hyprland/Nix/Plugins.md~",
+    "hyprland/Nix/Cachix.md",
+    "hyprland/Nix/Hyprland on Home Manager.md",
     "obsidian/Linking notes and files/Internal links.md",
-    "obsidian/Attachments/link-block-heading.png",
-    "lua/7-Lua Standalone.md~",
-    "lua/Lua.md~",
-    "lua/The Application Program Interface.md~",
-    "lua/The Standard Libraries.md~",
-    "git/Git.md",
-    "imgs/excal_name_bonc.png",
-    "imgs/excal_three_dot_menu.png",
-    "imgs/excal_as_md.png",
-    "obsidian/Community Plugins/excalidraw/Excalidraw.md",
-    "obsidian/Community Plugins/dataview/FAQ and Resources/Frequently Asked Questions.md",
-    "obsidian/Community Plugins/dataview/FAQ and Resources/Developing Against Dataview.md",
-    "obsidian/Community Plugins/excalidraw/ExcalidrawMain.excalidraw.md",
-    "imgs/excal_right_click_menu.png",
-    "obsidian/Community Plugins/dice roller/Table Rollers.md",
-    "obsidian/Community Plugins/dice roller/Section Rollers.md",
-    "obsidian/Community Plugins/dice roller/Saving Results.md",
-    "obsidian/Community Plugins/dice roller/Dice Roller Settings.md",
-    "obsidian/Community Plugins/dice roller/List Rollers.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Sort.md",
-    "obsidian/Community Plugins/dice roller/Modifiers/Re-roll.md",
-    "imgs/tab-stacks.gif",
-    "imgs/grouped-book-example.png",
-    "imgs/calendar_query_type.png",
-    "obsidian/favicon-96x96.png",
-    "obsidian/Attachments/application-installer-current-version.png",
+    "obsidian/Home.md",
+    "obsidian/Getting started/Link notes.md",
+    "obsidian/Editing and formatting/Basic formatting syntax.md",
+    "hyprland/Nix/Hyprland on Other Distros.md",
+    "hyprland/Nix/Hyprland on NixOS.md",
+    "hyprland/Plugins/Plugins.md",
+    "hyprland/Plugins/Using plugins.md",
+    "hyprland/Plugins/Development/Development.md",
+    "imgs/coffebar_dots.png",
+    "imgs/coffeebar_dots.png",
+    "imgs/notusknot_dots.png",
+    "imgs/1amSimp1e_dots.png",
+    "imgs/flick0_dots.png",
+    "imgs/linuxmobile_dots.png",
+    "imgs/linux_mobile_dots.png",
+    "imgs/fufexan_dots.png",
+    "imgs/ml4w_dots.png",
+    "imgs/ml4w.png",
     "Untitled.canvas"
   ]
 }

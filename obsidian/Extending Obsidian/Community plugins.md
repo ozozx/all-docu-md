@@ -26,6 +26,8 @@ You can also browse available plugins in your browser, by heading to [obsidian.m
 	- Sketch Your Mind. An Obsidian plugin to edit and draw Excalidraw drawings. Enter the world of 4D Visual PKM.
 - [[Dice roller]]
 	- Inline dice rolling for [[Home|Obsidian.md]]
+- [[obsidian/Community Plugins/dataview/Overview|dataview]]
+	- live index and query engine over your personal knowledge base.
 
 ## Install a community plugin
 

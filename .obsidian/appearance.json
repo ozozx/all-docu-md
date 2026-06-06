@@ -1,7 +1,9 @@
 {
   "textFontFamily": "FiraCode Nerd Font Mono,JetBrainsMono Nerd Font Mono",
   "enabledCssSnippets": [
-    "style"
+    "style",
+    "hyprland"
   ],
-  "theme": "system"
+  "theme": "system",
+  "baseFontSize": 14
 }
