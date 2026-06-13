@@ -39,7 +39,7 @@ hl.env("GTK_THEME", "Nord")
 - `hl.env("HYPRLAND_NO_SD_VARS", "1")` - Disables management of variables in systemd and dbus activation environments.
 - `hl.env("HYPRLAND_CONFIG", "/path/to/hyprland.lua")` - Specifies where you want your Hyprland configuration.
 
-## Aquamarine Environment Variables
+## Aquamarine Environment Variables <!-- ref https://github.com/hyprwm/aquamarine/blob/main/docs/env.md -->
 
 - `hl.env("AQ_TRACE", "1")` - Enables more verbose logging.
 - `hl.env("AQ_DRM_DEVICES", "...")` - Set an explicit list of DRM devices (GPUs) to use. It's a colon-separated list of paths, with the first being the primary. E.g.: `/dev/dri/card1:/dev/dri/card0`
@@ -99,4 +99,4 @@ To force GBM as a backend, set the following environment variables:
 
 - `GTK_THEME` - Set a GTK theme manually, for those who want to avoid appearance tools such as lxappearance or nwg-look.
 - `XCURSOR_THEME` - Set your cursor theme. The theme needs to be installed and readable by your user.
-- `XCURSOR_SIZE` - Set cursor size. See [here](FAQ.md) for why you might want this variable set.
+- `XCURSOR_SIZE` - Set cursor size. See [[FAQ|here]] for why you might want this variable set.

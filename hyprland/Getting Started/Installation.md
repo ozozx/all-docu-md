@@ -3,7 +3,6 @@ parent: "[[hyprland/Getting Started/Getting Started]]"
 next: "[[Master Tutorial]]"
 ---
 
-
 > [!WARNING]
 > Hyprland is not meant to be a full and user-friendly Desktop Environment. In a nutshell, it's a set of tools to allow you to create your own Desktop Environment.
 >
@@ -16,7 +15,7 @@ next: "[[Master Tutorial]]"
 
 ## Distros
 
-We officially run and test Hyprland on Arch and NixOS, and we guarantee Hyprland will work there. For any other distro (not based on Arch/Nix) you might have varying amounts of success. However, since Hyprland is extremely bleeding-edge, point release distros like Pop!\_OS, Fedora, Ubuntu, etc. will have **major** issues running Hyprland. Rolling release distros like openSUSE, Solus ,etc. will likely be fine.
+We officially run and test Hyprland on Arch and NixOS, and we guarantee Hyprland will work there. For any other distro (not based on Arch/Nix) you might have varying amounts of success. However, since Hyprland is extremely bleeding-edge, point release distros like Pop!\_OS, Fedora, Ubuntu, etc. will have **major** issues running Hyprland. Rolling release distros like openSUSE, Solus, etc. will likely be fine.
 
 ## Installation
 
@@ -109,10 +108,14 @@ from source first.
 
 > [!example]- Debian*
 >
-> `hyprland` is available as of Debian 14 (Forky)
+> `hyprland` is available as of Debian 14 (Forky) and in the Debian 13 (Trixie) backports
 >
 > ```bash
 > sudo apt install hyprland
+> ```
+> or
+> ```bash
+> sudo apt install -t trixie-backports hyprland
 > ```
 >
 > > [!NOTE]
@@ -172,38 +175,6 @@ from source first.
 > sudo add-apt-repository universe && sudo apt update && sudo apt install hyprland
 > ```
 
-> [!example]- Void Linux*
->
-> Hyprland is not available from Void Linux's official repositories due to the void developers being salty and personally disliking our main developer. However, a [third party repository](https://github.com/Makrennel/hyprland-void) is available with [binary packages](https://github.com/Makrennel/hyprland-void/tree/repository-x86_64-glibc) built in CI by GitHub Actions.
->
-> You can add this repository by creating a file such as `/etc/xbps.d/hyprland-void.conf` with the following contents:
->
-> ``` file:"/etc/xbps.d/hyprland-void.conf"
-> repository=https://raw.githubusercontent.com/Makrennel/hyprland-void/repository-x86_64-glibc
-> ```
->
-> Then you can install the packages as you would any other:
->
-> ```sh
-> sudo xbps-install -S hyprland
-> sudo xbps-install -S hyprland-devel # If you want to use plugins
-> sudo xbps-install -S xdg-desktop-portal-hyprland
->
-> xbps-query -Rs hypr # This will require you to have already accepted the repository's fingerprint using xbps-install -S
-> ```
->
-> More information is available in the [hyprland-void README](https://github.com/Makrennel/hyprland-void/blob/master/README.md), including information about how you can [manually build](https://github.com/Makrennel/hyprland-void?tab=readme-ov-file#manually-building) Hyprland for Void Linux using the templates provided.
-
-> [!example]- Slackware*
->
-> ```plain
-> hyprland-bin (SlackBuilds) - Prebuilt release for Slackware ready for install
-> ```
->
-> Hyprland is not installed by default on the current release of Slackware.
->
-> For detailed instructions on installing this build see [here](https://slackbuilds.org/repository/15.0/desktop/hyprland-bin/)
-
 > [!example]- Alpine*
 >
 > Hyprland is currently available in Alpine's [community repository](https://wiki.alpinelinux.org/wiki/Repositories#Community) and it is maintained by the community.
@@ -239,6 +210,38 @@ from source first.
 > ```bash
 > sudo eopkg install hyprland
 > ```
+
+> [!example]- Slackware* (Removed officially / not supporting lua config)
+>
+> ```plain
+> hyprland-bin (SlackBuilds) - Prebuilt release for Slackware ready for install
+> ```
+>
+> Hyprland is not installed by default on the current release of Slackware.
+>
+> For detailed instructions on installing this build see [here](https://slackbuilds.org/repository/15.0/desktop/hyprland-bin/)
+
+> [!example]- Void Linux* (Removed officially / not supporting lua config)
+>
+> Hyprland is not available from Void Linux's official repositories due to the void developers being salty and personally disliking our main developer. However, a [third party repository](https://github.com/Makrennel/hyprland-void) is available with [binary packages](https://github.com/Makrennel/hyprland-void/tree/repository-x86_64-glibc) built in CI by GitHub Actions.
+>
+> You can add this repository by creating a file such as `/etc/xbps.d/hyprland-void.conf` with the following contents:
+>
+> ``` file:"/etc/xbps.d/hyprland-void.conf"
+> repository=https://raw.githubusercontent.com/Makrennel/hyprland-void/repository-x86_64-glibc
+> ```
+>
+> Then you can install the packages as you would any other:
+>
+> ```sh
+> sudo xbps-install -S hyprland
+> sudo xbps-install -S hyprland-devel # If you want to use plugins
+> sudo xbps-install -S xdg-desktop-portal-hyprland
+>
+> xbps-query -Rs hypr # This will require you to have already accepted the repository's fingerprint using xbps-install -S
+> ```
+>
+> More information is available in the [hyprland-void README](https://github.com/Makrennel/hyprland-void/blob/master/README.md), including information about how you can [manually build](https://github.com/Makrennel/hyprland-void?tab=readme-ov-file#manually-building) Hyprland for Void Linux using the templates provided.
 
 _**\* Unofficial, no official support is provided. These instructions are community-driven, and no guarantee is provided for their validity.**_
 
@@ -298,7 +301,7 @@ Dependencies:
 > _Unfortunately, `xdg-desktop-portal-hyprland` still not in Ubuntu Repo so you have to build it from source_
 >
 > See
-> [The xdph GitHub repo's readme](https://github.com/hyprwm/xdg-desktop-portal-hyprland). Refer to [XDPH](../../Hypr-Ecosystem/xdg-desktop-portal-hyprland) and [Ubuntu Guide For Installing And Building Hyprland Gist](https://gist.github.com/Vertecedoc4545/3b077301299c20c5b9b4db00f4ca6000) for more information.
+> [The xdph GitHub repo's readme](https://github.com/hyprwm/xdg-desktop-portal-hyprland). Refer to [[xdg-desktop-portal-hyprland|XDPH]] and [Ubuntu Guide For Installing And Building Hyprland Gist](https://gist.github.com/Vertecedoc4545/3b077301299c20c5b9b4db00f4ca6000) for more information.
 >
 > > [!WARNING]
 > > Please note that since Ubuntu is generally behind with dependencies, it's not guaranteed that the build process will work at all. Even if it is, it's likely that it will break at some point in the future.

@@ -1,6 +1,6 @@
 ---
 parent: "[[Advanced and Cool]]"
-prev: "[[Multi-GPU]]"
+prev: "[[Virtual-GPU]]"
 ---
 
 > [!NOTE]

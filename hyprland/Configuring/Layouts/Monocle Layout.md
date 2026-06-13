@@ -13,7 +13,8 @@ Monocle is a layout where windows are always taking up the entire available spac
 
 ## Quirks
 
-Due to how layouts work, `hl.dsp.window.cycle_next()` will not work with Monocle. For cycling monocle windows, either use `hl.dsp.layout("cyclenext")` or `hl.dsp.window.cycle_next("tiled")`.
+Due to how layouts work, `hl.dsp.window.cycle_next()` will not work with Monocle. For cycling monocle
+windows, either use `hl.dsp.layout("cyclenext")` or `hl.dsp.window.cycle_next({ tiled = true })`.
 
 ## Layout messages
 

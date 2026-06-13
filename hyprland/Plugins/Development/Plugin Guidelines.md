@@ -18,7 +18,7 @@ Make a file in the root of your repository called `hyprpm.toml`.
 
 At the beginning, put some metadata about your plugin:
 
-```toml {filename="hyprpm.toml"}
+```toml file:"hyprpm.toml"
 [repository]
 name = "MyPlugin"
 authors = ["Me"]
@@ -34,7 +34,7 @@ commit_pins = [
 
 For each plugin, make a category like this:
 
-```toml {filename="hyprpm.toml"}
+```toml file:"hyprpm.toml"
 [plugin-name]
 description = "An epic plugin that will change the world!"
 authors = ["Me"]

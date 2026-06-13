@@ -1,7 +1,7 @@
 ---
 parent: "[[Advanced and Cool]]"
 prev: "[[Devices]]"
-next: "[[Permissions]]"
+next: "[[Uncommon tips and tricks]]"
 ---
 
 > [!NOTE]

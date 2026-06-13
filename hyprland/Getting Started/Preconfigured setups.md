@@ -3,7 +3,6 @@ parent: "[[hyprland/Getting Started/Getting Started]]"
 prev: "[[Master Tutorial]]"
 ---
 
-
 Don't want to spend days tinkering with Hyprland to get it just right from scratch, but you'd
 rather start from a DE-like setting? You've found the right place.
 

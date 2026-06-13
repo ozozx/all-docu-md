@@ -1,7 +1,7 @@
 ---
 parent: "[[Advanced and Cool]]"
 prev: "[[Environment variables]]"
-next: "[[Performance]]"
+next: "[[Virtual-GPU]]"
 ---
 
 > [!NOTE]

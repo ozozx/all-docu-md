@@ -38,7 +38,7 @@ A portal implements certain functionalities, such as opening file pickers or scr
 >
 >### Unmask Dependencies
 >
->```plain {filename="/etc/portage/profile/package.unmask"}
+>```plain file:"/etc/portage/profile/package.unmask"
 >dev-qt/qtbase
 >dev-qt/qtwayland
 >dev-qt/qtdeclarative
@@ -47,7 +47,7 @@ A portal implements certain functionalities, such as opening file pickers or scr
 >
 >### Apply Necessary useflags
 >
->```plain {filename="/etc/portage/package.use"}
+>```plain file:"/etc/portage/package.use"
 >dev-qt/qtbase opengl egl eglfs gles2-only
 >dev-qt/qtdeclarative opengl
 >sys-apps/xdg-desktop-portal screencast
@@ -55,7 +55,7 @@ A portal implements certain functionalities, such as opening file pickers or scr
 >
 >### Unmask Dependencies and xdph
 >
->```plain {filename="/etc/portage/package.accept_keywords"}
+>```plain file:"/etc/portage/package.accept_keywords"
 >gui-libs/xdg-desktop-portal-hyprland 
 >dev-qt/qtbase
 >dev-qt/qtwayland
@@ -115,7 +115,7 @@ If it works, add it to your config in autostarts.
 
 XDPH does not implement a file picker and uses the GTK one as a fallback by default (see `/usr/share/xdg-desktop-portal/hyprland-portals.conf`). If you want to use the KDE file picker but let XDPH handle everything else, create a file `~/.config/xdg-desktop-portal/hyprland-portals.conf` with the following content:
 
-```ini {filename="~/.config/xdg-desktop-portal/hyprland-portals.conf"}
+```ini file:"~/.config/xdg-desktop-portal/hyprland-portals.conf"
 [preferred]
 default = hyprland;gtk
 org.freedesktop.impl.portal.FileChooser = kde

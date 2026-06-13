@@ -94,20 +94,20 @@ A monitor. Can be:
 
 | method | description |
 | --- | --- |
-| `close(window?)` | Close a window. |
-| `kill(window?)` | Kill a window |
-| `signal({ signal, window? })` | send a signal to a window process |
+| `close(window?)` | Send a graceful request to close the window. |
+| `kill(window?)` | Kill the process owning the window with a `SIGKILL`. |
+| `signal({ signal, window? })` | Send a POSIX signal to the process owning the window. |
 | `float({ action?, window? })` | set a window's floating state. |
 | `fullscreen({ mode?, action?, window? })` | set a window's fullscreen state. `mode` can be "maximized" and "fullscreen". `action` can be `toggle`/`set`/`unset` |
 | `fullscreen_state({ internal, client, action?, window? })` | set a window's fullscreen state with more precision. `action` can be `toggle`/`set`/`unset`. See [[#Fullscreenstate]] |
 | `pseudo({ action?, window? })` | set a window's pseudotiling state. |
-| `move({ direction, group_aware? })` | move a window in a direction. `group_aware = true` will put windows in/out of groups alongside the given direction. |
-| `move({ workspace, follow? })` | move a window to a workspace |
-| `move({ monitor, follow? })` | move a window to a monitor |
-| `move({ x, y, relative? })` | move a window by / to a coord |
-| `move({ into_group = direction })` | move a window into a group in a direction |
-| `move({ into_or_create_group = direction })` | move a window into a group in a direction, or create a group if no group exists in that direction |
-| `move({ out_of_group })` | move a window out of a group. `true` for directionless, direction for a direction |
+| `move({ direction, group_aware?, window? })` | move a window in a direction. `group_aware = true` will put windows in/out of groups alongside the given direction. |
+| `move({ workspace, follow?, window? })` | move a window to a workspace |
+| `move({ monitor, follow?, window? })` | move a window to a monitor |
+| `move({ x, y, relative?, window? })` | move a window by / to a coord |
+| `move({ into_group = direction, window? })` | move a window into a group in a direction |
+| `move({ into_or_create_group = direction, window? })` | move a window into a group in a direction, or create a group if no group exists in that direction |
+| `move({ out_of_group, window? })` | move a window out of a group. `true` for directionless, direction for a direction |
 | `swap({ direction })` | swap the current window with another one in a given direction | 
 | `swap({ target })` | swap the current window with another one | 
 | `swap({ next })` | swap the current window with the next one | 
@@ -117,12 +117,13 @@ A monitor. Can be:
 | `tag({ tag, window? })` | tag a window |
 | `clear_tags({ window? })` | clear all tags from a window |
 | `toggle_swallow()` | toggle all swallowed windows visible |
-| `pin({ window? })` | pin a window |
+| `pin({ action?, window? })` | pin a window |
 | `alter_zorder({ mode, window? })` | mode can be "top" or "bottom" |
 | `set_prop({ prop, value, window? })` | set a window property |
 | `deny_from_group({ action? })` | deny a window from entering a group |
 | `drag()` | begin an interactive drag. To be used with mouse binds. |
 | `resize()` | begin an interactive resize. To be used with mouse binds. |
+| `resize({ keep_aspect_ratio })` | begin an interactive resize. To be used with mouse binds. Overrides window's `keep_aspect_ratio` prop. |
 | `resize({ x, y, relative?, window? })` | resize a window |
 
 ### Workspace
@@ -157,7 +158,7 @@ A monitor. Can be:
 | method | description |
 | --- | --- |
 | `move_to_corner({ corner, window? })` | move the cursor to a given corner of the window. Corner is 0-3 |
-| `move({ x, y })` | move the cursor to agiven coordinate |
+| `move({ x, y })` | move the cursor to a given coordinate |
 
 > [!WARNING]
 > [[Systemd start|uwsm]] users should avoid using `exit` dispatcher, or terminating Hyprland process directly, as exiting Hyprland this way removes it from under its clients and interferes with ordered shutdown sequence. Use `exec, uwsm stop` (or [other variants](https://github.com/Vladimir-csp/uwsm#how-to-stop)) which will gracefully bring down graphical session (and login session bound to it, if any). If you experience problems with units entering inconsistent states, affecting subsequent sessions, use `exec, loginctl terminate-user ""` instead (terminates all units of the user).
@@ -227,7 +228,7 @@ For example, to move a window to a named special workspace you can use the follo
 
 ```lua
 hl.bind("SUPER + C", hl.dsp.window.move({ workspace = "special:magic" }))
--- To see the hiden window and workspace you can use: 
+-- To see the hidden window and workspace you can use: 
 hl.bind("SUPER + S", hl.dsp.workspace.toggle_special("magic"))
 ```
 
@@ -241,7 +242,7 @@ Example:
 hl.bind("SUPER + E", hl.dsp.exec_cmd("kitty", { float = true, move = {0, 0} }))
 ```
 
-## setprop
+## set_prop
 
 Props are any of the _dynamic effects_ of [[Window Rules#Dynamic effects|Window Rules]].
 

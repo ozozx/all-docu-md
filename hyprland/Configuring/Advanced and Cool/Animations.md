@@ -16,7 +16,7 @@ hl.animation({ leaf = STRING, enabled = BOOLEAN, speed = FLOAT, curve = STRING[,
 ```
 `leaf` is scope of the animation. See [[#Animation tree]]
 
-`enable` use `true` to disable, `false` to enable. _Note:_ if it's `false`, you can omit further args.
+`enabled` use `true` to enable, `false` to disable. _Note:_ if it's `false`, you can omit further args.
 
 `speed` is the amount of ds (1ds = 100ms) the animation will take. For example `speed = 1` = 100ms
 
@@ -28,14 +28,14 @@ hl.animation({ leaf = STRING, enabled = BOOLEAN, speed = FLOAT, curve = STRING[,
 
 ```lua
 hl.animation({ leaf = "workspaces", enabled = true, speed = 8, bezier = "my_epic_bezier" })
-hl.animation({ leaf = window, enabled = true, speed = 10, spring = "my_epic_spring", style = "slide"})
+hl.animation({ leaf = "windows", enabled = true, speed = 10, spring = "my_epic_spring", style = "slide"})
 hl.animation({ leaf = "fade", enabled = 0 })
 ```
 
 ### Animation tree
 The animations are a tree. If an animation is unset, it will inherit its parent's values.
 
-```
+```txt
 global
   ↳ windows - styles: slide, popin, gnomed
     ↳ windowsIn - window open - styles: same as windows

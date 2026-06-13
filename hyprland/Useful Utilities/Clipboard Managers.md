@@ -58,7 +58,6 @@ Bash commands:
 >cliphist list | fuzzel --dmenu --with-nth 2 | cliphist decode | wl-copy
 >```
 
-
 The binds above bind `SUPER + V` to access the clipboard history.
 For further info, please refer to the program's GitHub repository linked above.
 
@@ -91,7 +90,6 @@ Now you can bind `clipman` like this:
 >```lua
 >hl.bind("SUPER + V", hl.dsp.exec_cmd("clipman pick -t STDOUT | fuzzel --dmenu | wl-copy"))
 >```
-
 
 ...and so on.
 For further information, please refer to the program's GitHub repository linked above.
@@ -135,7 +133,6 @@ To bind `clipvault` to a hotkey and display it using a picker of your choice (e.
 >```sh
 >clipvault list | tofi | clipvault get | wl-copy
 >```
-
 
 The binds above bind `SUPER + V` to access the clipboard history.
 For further info, please refer to the program's GitHub repository linked above.

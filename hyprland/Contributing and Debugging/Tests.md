@@ -36,6 +36,14 @@ To run Hyprtester, execute the following in a debug build:
 
 The goal of failed tests is to be **0**.
 
+#### Run selected tests
+
+When you only want to run specific tests, just list their names (without group/file name) on the command line, e.g.:
+
+```sh
+./build/hyprtester/hyprtester dwindleSplit focusMasterPrevious processSpawning -c hyprtester/test.lua -b ./build/Hyprland -p hyprtester/plugin/hyprtestplugin.so
+```
+
 ## Submitting new tests
 
 New tests have to either be a GTest, if the thing tested is possible to be unit tested, or a part of hyprtester.

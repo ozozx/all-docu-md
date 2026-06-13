@@ -1,6 +1,6 @@
 ---
 parent: "[[Advanced and Cool]]"
-prev: "[[Tearing]]"
+prev: "[[Uncommon tips and tricks]]"
 next: "[[Using hyprctl]]"
 ---
 

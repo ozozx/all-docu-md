@@ -4,7 +4,6 @@ prev: "[[Installation]]"
 next: "[[Preconfigured setups]]"
 ---
 
-
 If you are coming to Hyprland for the first time, this is the main tutorial to read.
 
 This tutorial covers everything you need to get things going. It links to other pages where necessary.
@@ -90,8 +89,6 @@ Head onto the [[Configuring|Configuring Hyprland page]] to learn all about confi
 ## Cursors
 
 Cursors are a notorious pain to set up when you don't know how. See [[FAQ#How do I change me mouse cursor?|this FAQ entry on changing your mouse cursor]]
-
-If your cursor does not appear, see [[FAQ#me cursor no render|this FAQ entry on cursor not rendering]]
 
 ## Themes
 

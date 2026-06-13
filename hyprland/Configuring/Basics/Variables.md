@@ -43,9 +43,9 @@ end
 | color | color (see hint below for color info) |
 | vec2 | vector with 2 float values (e.g. `{ 20, 20 }`) |
 | str | a string (wrapped into "", e.g: `"dwindle"`) |
-| gradient | a gradient, will accept a color, or `​{ colors = { "rgba(...)", "rgba(...)" }, angle? = 45 }` |
+| gradient | a gradient, will accept a color, or `{ colors = { "rgba(...)", "rgba(...)" }, angle? = 45 }` |
 | font_weight | an integer between 100 and 1000, or one of the following presets: `"thin"` `"ultralight"` `"light"` `"semilight"` `"book"` `"normal"` `"medium"` `"semibold"` `"bold"` `"ultrabold"` `"heavy"` `"ultraheavy"` |
-| css_gaps | an integer, or `​{ top?, left?, right?, bottom? }` |
+| css_gaps | an integer, or `{ top?, left?, right?, bottom? }` |
 
 > [!NOTE] **Colors**
 >
@@ -163,6 +163,15 @@ _Subcategory `decoration.glow.`_
 | render_power | in what power to render the falloff (more power, the faster the falloff) [1 - 4] | int | `3` |
 | color | glow's color. Alpha dictates glow's opacity. | color | `0xee1a1a1a` |
 | color_inactive | inactive glow color. (if not set, will fall back to color) | color | unset |
+
+#### Motion blur
+
+_Subcategory `decoration.motion_blur.`_
+
+| name | description | type | default |
+| --- | --- | --- | --- |
+| enabled | enable motion blur on moving / resizing windows | bool | `false` |
+| samples | The amount of samples to render. More will mean clearer blur, at the cost of more compute. | int | `7` |
 
 ### Animations
 
@@ -512,11 +521,11 @@ _Subcategory `render.`_
 | cm_auto_hdr | Auto-switch to HDR in fullscreen when needed. 0 - off, 1 - switch to `cm, hdr`, 2 - switch to `cm, hdredid` | int | `1` |
 | new_render_scheduling | Automatically uses triple buffering when needed, improves FPS on underpowered devices. | bool | `false` |
 | non_shader_cm | Enable CM without shader. 0 - disable, 1 - whenever possible, 2 - DS and passthrough only, 3 - disable and ignore CM issues | int | `2` |
-| non_shader_cm_interop | 0 - external ctm (hypersunset, etc.) is disabled in fullscreen, 1 - external ctm is enabled in fullscreen, 2 - external ctm is disabled for fullscreen photo/video/game content types | int | `2` |
+| non_shader_cm_interop | 0 - external ctm (hyprsunset, etc.) is disabled in fullscreen, 1 - external ctm is enabled in fullscreen, 2 - external ctm is disabled for fullscreen photo/video/game content types | int | `2` |
 | cm_sdr_eotf | Default transfer function for displaying SDR apps. `"default"` - Use default value (sRGB), `"gamma22"` - Treat unspecified as Gamma 2.2, `"gamma22force"` - Treat unspecified and sRGB as Gamma 2.2, `"srgb"` - Treat unspecified as sRGB| str | `"default"` |
 | commit_timing_enabled | Enable commit timing proto. Requires restart | bool | `true` |
 | use_fp16 | Use FP16 buffers internally. 0 - disabled, 1 - enabled, 2 - enabled in hdr mode | int | `2` |
-| keep_unmodified_copy | Keep umodified SDR frame copy for sreensharing. 0 - disabled, 1 - on, 2 - auto (enabled in HDR with SDR modifiers). Set to 1 if screenshots are transparent. | int | `2` |
+| keep_unmodified_copy | Keep unmodified SDR frame copy for screensharing. 0 - disabled, 1 - on, 2 - auto (enabled in HDR with SDR modifiers). Set to 1 if screenshots are transparent. | int | `2` |
 | use_shader_blur_blend | Use experimental blurred bg blending (glitched on rotated screens). Set to true if blur is missing with fp16 or keep_unmodified_copy | bool | `false` |
 
 `cm_auto_hdr` requires `--target-colorspace-hint-mode=source` mpv option to work with mpv versions greater than v0.40.0
@@ -568,7 +577,7 @@ _Subcategory `quirks.`_
 | --- | --- | --- | --- |
 | prefer_hdr | Report HDR mode as preferred. 0 - off, 1 - always, 2 - gamescope only | int | `0` |
 
-Some clients expect monitor to be in HDR mode prior to the client start. This breaks auto HDR activation and can cause whitescreen and flickering. Use `prefer_hdr` to fix it,
+Some clients expect monitor to be in HDR mode prior to the client start. This breaks auto HDR activation and can cause whitescreen and flickering. Use `prefer_hdr` to fix it.
 
 ### Debug
 

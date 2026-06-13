@@ -4,44 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "792475b3b15a3f65",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "fa3d1009645e588f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "hyprland/Contributing and Debugging/Translations.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Translations"
-            },
-            "group": "99876f4887d47b2f"
-          }
-        ]
-      },
-      {
         "id": "378b385c1fa83e45",
         "type": "tabs",
         "children": [
           {
-            "id": "86c93f2123573072",
+            "id": "b57c9e55d605ed58",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hyprland/Contributing and Debugging/Translations.md",
+                "file": "hyprland/Configuring/Basics/Dispatchers.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Translations"
-            },
-            "group": "99876f4887d47b2f"
+              "title": "Dispatchers"
+            }
           }
         ]
       }
@@ -75,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:hyprland window selector",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,12 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "32655eb027841fcb",
@@ -117,17 +95,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hyprland/Contributing and Debugging/Translations.md",
+                "file": "hyprland/Configuring/Basics/Dispatchers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Translations"
+              "title": "Backlinks for Dispatchers"
             }
           },
           {
@@ -136,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hyprland/Useful Utilities/Phone connect.md",
+                "file": "hyprland/Configuring/Basics/Dispatchers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Phone connect"
+              "title": "Outgoing links from Dispatchers"
             }
           },
           {
@@ -179,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hyprland/Contributing and Debugging/Translations.md",
+                "file": "hyprland/Configuring/Basics/Dispatchers.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Translations"
+              "title": "Outline of Dispatchers"
             }
           },
           {
@@ -215,8 +193,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5,
-    "collapsed": true
+    "width": 355.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,44 +213,43 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fa3d1009645e588f",
+  "active": "b57c9e55d605ed58",
   "lastOpenFiles": [
-    "hyprland/Contributing and Debugging/Translations.md~",
-    "hyprland/Contributing and Debugging/Tests.md",
-    "hyprland/Contributing and Debugging/Tests.md~",
-    "hyprland/Contributing and Debugging/PR Guidelines.md",
-    "hyprland/Contributing and Debugging/PR Guidelines.md~",
-    "hyprland/Contributing and Debugging/Issue Guidelines.md",
-    "hyprland/Contributing and Debugging/Issue Guidelines.md~",
-    "hyprland/Contributing and Debugging/Translations.md",
-    "hyprland/Contributing and Debugging/Contributing and Debugging.md",
-    "hyprland/Contributing and Debugging/Contributing and Debugging.md~",
-    "hyprland/Connect.md",
+    "hyprland/Configuring/Basics/Variables.md",
+    "hyprland/Configuring/Basics/Dispatchers.md",
+    "hyprland/Configuring/Basics/Window Rules.md",
+    "hyprland/Useful Utilities/Other.md",
+    "hyprland/update-wiki.zsh~",
+    "hyprland/Hypr Ecosystem/hyprsunset.md",
+    "hyprland/Hypr Ecosystem/hyprtoolkit/hyprtoolkit.md",
+    "hyprland/Hypr Ecosystem/hyprcursor.md",
     "hyprland/FAQ.md",
+    "hyprland/Getting Started/Installation.md",
+    "hyprland/Getting Started/Installation.md~",
+    "hyprland/Contributing and Debugging/Contributing and Debugging.md",
+    "hyprland/Configuring/⮞⮞ Start Here ⮜⮜.md",
+    "hyprland/Configuring/⮞⮞ Start Here ⮜⮜.md~",
+    "hyprland/Configuring/Basics/Binds.md",
+    "hyprland/Configuring/Advanced and Cool/Virtual-GPU.md",
+    "hyprland/Configuring/Basics/Autostart.md",
+    "hyprland/Configuring/Advanced and Cool/Advanced and Cool.md",
+    "hyprland/Configuring/Advanced and Cool/Performance.md",
+    "hyprland/Configuring/Advanced and Cool/Multi-GPU.md",
+    "hyprland/Configuring/Advanced and Cool/Environment variables.md",
+    "hyprland/Version selector ⚙️.md",
+    "hyprland/update-wiki.zsh",
+    "hyprland/Configuring/Advanced and Cool/Expanding functionality.md",
+    "hyprland/Configuring/Basics/Basics.md",
+    "hyprland/Configuring/Advanced and Cool/Animations.md",
+    "lua/6-The Standard Libraries.md",
+    "lua/5-The Auxiliary Library.md",
+    "hyprland/Configuring/Advanced and Cool/Uncommon tips and tricks.md",
+    "hyprland/Configuring/Advanced and Cool/Uncommon tips and tricks.md~",
+    "hyprland/Configuring/Advanced and Cool/Permissions.md~",
+    "hyprland/Hypr Ecosystem/xdg-desktop-portal-hyprland.md~",
+    "hyprland/Plugins/Development/Plugin Guidelines.md~",
     "hyprland/FAQ.md~",
-    "hyprland/Crashes and Bugs.md",
-    "hyprland/Crashes and Bugs.md~",
-    "hyprland/IPC.md",
-    "hyprland/IPC.md~",
-    "hyprland/Nvidia.md",
-    "hyprland/Nix/Nix.md",
-    "hyprland/Nvidia.md~",
-    "hyprland/Nix/Contributing and Debugging.md",
-    "hyprland/Nix/Plugins.md",
-    "hyprland/Nix/Contributing and Debugging.md~",
-    "hyprland/Nix/Options & Overrides.md",
-    "hyprland/Nix/Plugins.md~",
-    "hyprland/Nix/Cachix.md",
-    "hyprland/Nix/Hyprland on Home Manager.md",
-    "obsidian/Linking notes and files/Internal links.md",
-    "obsidian/Home.md",
-    "obsidian/Getting started/Link notes.md",
-    "obsidian/Editing and formatting/Basic formatting syntax.md",
-    "hyprland/Nix/Hyprland on Other Distros.md",
-    "hyprland/Nix/Hyprland on NixOS.md",
-    "hyprland/Plugins/Plugins.md",
-    "hyprland/Plugins/Using plugins.md",
-    "hyprland/Plugins/Development/Development.md",
+    "hyprland/Contributing and Debugging/Translations.md~",
     "imgs/coffebar_dots.png",
     "imgs/coffeebar_dots.png",
     "imgs/notusknot_dots.png",

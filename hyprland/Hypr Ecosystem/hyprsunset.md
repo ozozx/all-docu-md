@@ -66,7 +66,7 @@ profile {
 
 ## Usage
 
-To autostart hyprsunset, add: `hyprsunset` to your `hyprland.lua`'s autostart. Alternatively, use `systemctl --user enable --now hyprsunset.service` in order to use hyprsunset as a systemd user service.
+To autostart hyprsunset, add: `hyprsunset` to your `hyprland.lua`'s autostart. If Hyprland is started with [[Systemd start|uwsm]], you can use `systemctl --user enable --now hyprsunset.service`.
 
 Hyprsunset can also be controlled by supplying arguments to the command.
 By specifying `hyprsunset --temperature 5000` you will override the current active config's temperature setting.  This however, will be overridden once a new profile is activated.

@@ -52,12 +52,6 @@ To force them to run in native Wayland mode, see [[Master Tutorial#Force apps to
 
 If they can't, see [[XWayland|the XWayland page]].
 
-### Me cursor no render?
-
-If you are on NVIDIA, you may need to use the `WLR_NO_HARDWARE_CURSORS=1` environment variable.
-
-> [!info] this entry was removed in wiki ver. 0.41.0
-
 ### My external monitor is blank / doesn't render / receives no signal (laptop)
 
 For Nvidia graphics - This issue appears to be resolved when using Nvidia Drivers 525.60.11 or later, but it may persist with older drivers.
@@ -185,7 +179,7 @@ Use [Open Tablet Driver](https://github.com/OpenTabletDriver/OpenTabletDriver) t
 
 ### Some of my apps take a really long time to open...?
 
-```lua {filename="~/.config/hypr/hyprland.lua"}
+```lua file:"~/.config/hypr/hyprland.lua"
 hl.on("hyprland.start", function()
 	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 end)

@@ -96,7 +96,7 @@ Static effects are evaluated once when the window is opened and never again. Thi
 | fullscreen | boolean | Fullscreens a window. |
 | maximize | boolean | Maximizes a window. |
 | fullscreen_state | string | Sets the fullscreen mode, e.g. `"1 2"` (internal client). Values: `0` none, `1` maximize, `2` fullscreen, `3` maximize and fullscreen. |
-| move | string | Moves a floating window to a given coordinate, monitor-local. E.g. `{100, 200}` or `"{"cursor_x-(window_w*0.5))", "(cursor_y-(window_h*0.5))"}`. |
+| move | string | Moves a floating window to a given coordinate, monitor-local. E.g. `{100, 200}` or `{"cursor_x-(window_w*0.5))", "(cursor_y-(window_h*0.5))"}`. |
 | size | string | Resizes a floating window. E.g. `{800, 600}` or `{"(monitor_w*0.5)", "(monitor_h*0.5)"}`. |
 | center | boolean | If the window is floating, will center it on the monitor. |
 | pseudo | boolean | Pseudotiles a window. |
@@ -160,6 +160,7 @@ Dynamic effects are re-evaluated every time a property changes.
 | no_shortcuts_inhibit | boolean | Disallows the app from inhibiting your shortcuts. |
 | no_screen_share | boolean | Hides the window and its popups from screen sharing by drawing black rectangles in their place. |
 | no_vrr | boolean | Disables VRR for the window. Only works when `misc.vrr` is set to `2` or `3`. |
+| no_auto_hdr | boolean | Disables AutoHDR for the window. This is useful to stop programs like `foot` triggering AutoHDR when they are fullscreened. |
 | opaque | boolean | Forces the window to be opaque. |
 | force_rgbx | boolean | Forces Hyprland to ignore the alpha channel entirely. |
 | sync_fullscreen | boolean | Whether the fullscreen mode should always be the same as the one sent to the window. |
@@ -169,8 +170,9 @@ Dynamic effects are re-evaluated every time a property changes.
 | scroll_mouse | number | Forces the window to override `input.scroll_factor`. |
 | scroll_touchpad | number | Forces the window to override `input.touchpad.scroll_factor`. |
 | confine_pointer | boolean | Locks the mouse cursor to the window. Mostly useful for keeping your mouse cursor locked to one monitor during gaming.
+| tonemap | string | Tonemapping behavior: `on` (Default), `off` disables tonemapping, `clamp` clamps source luminance to target, `limited` uses a dynamic curve to tonemap only the top end out of bounds content.
 
-All dynamic effects can be set with `setprop`.
+All dynamic effects can be set with `set_prop`.
 
 ### `group` window rule options
 
@@ -220,8 +222,8 @@ hl.window_rule({ match = { tag = "term" },         tag = "-code" })   -- Remove 
 Or with a keybind for convenience:
 
 ```lua
-hl.bind("SUPER + CTRL + 2", function() hl.dispatch(hl.dsp.window.tag({ tag = "alpha_0.2" })))
-hl.bind("SUPER + CTRL + 4", function() hl.dispatch(hl.dsp.window.tag({ tag = "alpha_0.4" })))
+hl.bind("SUPER + CTRL + 2", hl.dsp.window.tag({ tag = "alpha_0.2" }))
+hl.bind("SUPER + CTRL + 4", hl.dsp.window.tag({ tag = "alpha_0.4" }))
 hl.window_rule({ match = { tag = "alpha_0.2" }, opacity = "0.2 override" })
 hl.window_rule({ match = { tag = "alpha_0.4" }, opacity = "0.4 override" })
 ```

@@ -82,9 +82,9 @@ More information is available [here](https://wiki.archlinux.org/title/NVIDIA#DRM
 
 Add these variables to your Hyprland config:
 
-```ini
-env = LIBVA_DRIVER_NAME,nvidia
-env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+```lua
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 ```
 
 ### Finishing up
@@ -106,8 +106,8 @@ Electron and CEF apps flicker because:
 
 To enable native Wayland support for most Electron apps, add this environment variable to your config:
 
-```ini
-env = ELECTRON_OZONE_PLATFORM_HINT,auto
+```lua
+hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 ```
 
 This has been confirmed to work on Vesktop, VSCodium, Obsidian and will probably work on other Electron apps as well.
@@ -146,8 +146,8 @@ The install instructions are available in the README. However, a quick guide wil
 1. Install the package. On Arch, this is `libva-nvidia-driver` in the official repos.
 
 2. Add this variable to your Hyprland config:
-   ```ini
-   env = NVD_BACKEND,direct
+   ```lua
+   hl.env("NVD_BACKEND", "direct")
    ```
 
    See [here](https://github.com/elFarto/nvidia-vaapi-driver?tab=readme-ov-file#upstream-regressions) for more information on this environment variable.

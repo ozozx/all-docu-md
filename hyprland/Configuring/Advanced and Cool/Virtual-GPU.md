@@ -1,3 +1,9 @@
+---
+parent: "[[Advanced and Cool]]"
+prev: "[[Multi-GPU]]"
+next: "[[Performance]]"
+---
+
 > [!NOTE]
 > Looking for the old hyprlang syntax? Check the [0.54 wiki pages](https://wiki.hypr.land/0.54.0/). Since Hyprland 0.55, hyprlang is deprecated in favor of lua.
 
@@ -110,7 +116,7 @@ hyprctl --instance 0 dispatch 'exec_raw("Sunshine")'
 
 The remote display server should be running below the Hyprland process to inherit all its environment variables. Otherwise it will not find your headless display.
 
-If everything is configured and working correctly, you can set your server in your `hyprland.conf` file to be autostarted. (See the [FAQ](../Basics/Autostart.md)):
+If everything is configured and working correctly, you can set your server in your `hyprland.conf` file to be autostarted. (See the [[Autostart|FAQ]]):
 
 ```lua
 hl.on("hyprland.start", function ()

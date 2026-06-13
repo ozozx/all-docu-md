@@ -33,7 +33,7 @@ See [[Dispatchers]] for a list of dispatchers.
 
 ### reload
 
-Issue a `reload` to force reload the config.
+Issue a `reload` to force reload the config. `reload full-reset` will recreate the entire config context, allowing switching to/from lua/hyprlang. `full-reset` should not be used unless really necessary.
 
 ### kill
 

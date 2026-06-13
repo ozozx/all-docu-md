@@ -28,7 +28,7 @@ will bind opening Firefox to <key>SUPER</key> + <key>SHIFT</key> + <key>Q</key>
 > hl.bind("Print", hl.dsp.exec_cmd("grim"))
 > ```
 
-_The dispatcher list can be found in [[Dispatchers]]._
+_The dispatcher list can be found in [[Dispatchers#Dispatcher List|Dispatchers]]._
 
 You can also put a lua function if you prefer as your bind dispatcher:
 
@@ -84,9 +84,9 @@ Available flags:
 | `transparent` | Cannot be shadowed by other binds. |
 | `ignore_mods` | Will ignore modifiers. |
 | `description` | Will allow you to write a description for your bind. |
-| `bypass` | Bypasses the app's requests to inhibit keybinds. |
+| `dont_inhibit` | Bypasses the app's requests to inhibit keybinds. |
 | `submap_universal` | Will be active no matter the submap. |
-| `devices` | Allow binds to be set per device. See [[#Per-Device Binds]] |
+| `device` | Allow binds to be set per device. See [Per-Device Binds](#per-device-binds) |
 
 Example Usage:
 
@@ -154,7 +154,7 @@ hl.bind("switch:off:[switch name]", hl.dsp.exec_cmd("notify-send 'among us'"), {
 
 ### Multiple binds to one key
 
-You can trigger multiple actions with the same keybind by using a lua lambda function, with different `disapatcher`s and `param`s:
+You can trigger multiple actions with the same keybind by using a lua lambda function, with different `dispatcher`s and `param`s:
 
 ```lua
 -- To switch between windows in a floating workspace:
@@ -198,38 +198,30 @@ hl.bind(keys, dispatcher(params), { device = { inclusive = true, list = { "devic
 
 ```lua
 -- Only example-keyboard-1 can use this bind
-hl.bind("SUPER + Q", hl.dsp.exec_cmd("kitty"), { devices = { inclusive = true, list = { "example-keyboard-1" } } })
+hl.bind("SUPER + Q", hl.dsp.exec_cmd("kitty"), { device = { inclusive = true, list = { "example-keyboard-1" } } })
 
 -- Every keyboard other than razer-keyboard and asus-keyboard can use this bind
-hl.bind("SUPER + Q", hl.dsp.exec_cmd("kitty"), { devices = { inclusive = false, list = { "razer-keyboard", "asus-keyboard" } } })
+hl.bind("SUPER + Q", hl.dsp.exec_cmd("kitty"), { device = { inclusive = false, list = { "razer-keyboard", "asus-keyboard" } } })
 ```
 
 You can check device names with `hyprctl devices`.
 
 ## Mouse Binds
 
-These are binds that rely on mouse movement. They will have one less arg.
-`hl.config.binds.drag_threshold` can be used to differentiate between clicks and drags with the same button:
-```
-TODO: Make it make sense
-```
+These are binds that rely on mouse movement.
 
 ```lua
-hl.config({
-    binds {
-        drag_threshold = 10 -- Fire a drag event only after dragging for more than 10px
-    }
-})
-hl.bind("ALT + mouse:272", hl.dsp.window.drag(), { mouse = true })    -- ALT + LMB: Move a window by dragging more than 10px.
-hl.bind("ALT + mouse:272", hl.dsp.window.resize(), { mouse = true })  -- ALT + LMB: Floats a window by clicking
+hl.bind("ALT + mouse:272", hl.dsp.window.drag(), { mouse = true })    -- ALT + LMB: Move a window
+hl.bind("ALT + mouse:273", hl.dsp.window.resize(), { mouse = true })  -- ALT + RMB: Resize a window
 ```
 
 Available mouse binds:
 
-| Name | Description | Params |
-| ---- | ----------- | ------ |
-| `drag()` | moves the active window | None |
-| `resize()` | resizes the active window | None |
+| Name | Description |
+| ---- | ----------- |
+| `drag()` | moves the active window |
+| `resize()` | resizes the active window |
+| `resize({ keep_aspect_ratio })`| resizes the active window, overriding the window's `keep_aspect_ratio` prop temporarily |
 
 Common mouse button key codes (check `wev` for other buttons):
 
@@ -240,8 +232,22 @@ MMB -> 274
 ```
 
 > [!NOTE]
-> Mouse binds, despite their name, behave like normal binds.
+> Mouse binds, despite their name, behave like normal binds.  
 > You are free to use whatever keys / mods you please. When held, the mouse function will be activated.
+
+### Click and drag
+
+`binds.drag_threshold` can be used to differentiate between clicks and drags with the same button:
+
+```lua
+hl.config({
+    binds = {
+        drag_threshold = 10 -- Fire a drag event only after dragging for more than 10px
+    }
+})
+hl.bind("ALT + mouse:272", hl.dsp.window.drag(), { mouse = true, drag = true })    -- ALT + LMB (drag): Move a window by dragging more than 10px.
+hl.bind("ALT + mouse:272", hl.dsp.window.float(), { mouse = true, click = true })  -- ALT + LMB (click): Floats a window by clicking
+```
 
 ### Touchpad
 
@@ -266,7 +272,7 @@ See the <code>[[Dispatchers#Dispatcher List|pass]]</code> and <code>[[Dispatcher
 Let's take OBS as an example: the "Start/Stop Recording" keybind is set to <key>SUPER</key> + <key>F10</key>, to make it work globally, simply add:
 
 ```lua
-hl.bind("SUPER + F10", hl.dsp.pass("class:^(com\.obsproject\.Studio)$"))
+hl.bind("SUPER + F10", hl.dsp.pass({ window = "class:^(com\\.obsproject\\.Studio)$" }))
 ```
 
 to your config and you're done.
@@ -307,7 +313,7 @@ hl.bind("SUPER + SHIFT + A", hl.dsp.global("coolApp:myToggle"))
 
 ## Submaps
 
-Keybind submaps allow you to activate aseparate set of keybinds.
+Keybind submaps allow you to activate a separate set of keybinds.
 For example, if you want to enter a `resize` _mode_ that allows you to resize windows with the arrow keys, you can do it like this:
 
 ```lua
@@ -318,10 +324,10 @@ hl.bind("ALT + R", hl.dsp.submap("resize"))
 hl.define_submap("resize", function()
 
     -- Set repeating binds for resizing the active window.
-    hl.bind("right", hl.resize({ x = 10, y = 0, relative = true}), { repeating = true })
-    hl.bind("left", hl.resize({ x = -10, y = 0, relative = true}), { repeating = true })
-    hl.bind("up", hl.resize({ x = 0, y = 10, relative = true}), { repeating = true })
-    hl.bind("down", hl.resize({ x = 10, y = -10, relative = true}), { repeating = true })
+    hl.bind("right", hl.dsp.window.resize({ x = 10, y = 0, relative = true}), { repeating = true })
+    hl.bind("left", hl.dsp.window.resize({ x = -10, y = 0, relative = true}), { repeating = true })
+    hl.bind("up", hl.dsp.window.resize({ x = 0, y = 10, relative = true}), { repeating = true })
+    hl.bind("down", hl.dsp.window.resize({ x = 0, y = -10, relative = true}), { repeating = true })
 
     -- Use `reset` to go back to the global submap
     hl.bind("escape", hl.dsp.submap("reset"))
@@ -334,8 +340,8 @@ end)
 > [!WARNING]
 > Do not forget a keybind (`escape`, in this case) to reset the keymap while inside it!
 >
-> If you get stuck inside a keymap, you can use `hyprctl dispatch 'hl.dsp.submap("reset")'` to go back.
-> If you do not have a terminal open, open a new tty and use the --instance flag to select which instanceof hyprland to operate on (if you only have one running this is 0). For example: `hyprctl dispatch --instace 0 'hl.dsp.submap("reset")'`
+> If you get stuck inside a keymap, you can use `hyprctl dispatch 'hl.dsp.submap("reset")` to go back.
+> If you do not have a terminal open, open a new tty and use the --instance flag to select which instance of hyprland to operate on (if you only have one running this is 0). For example: `hyprctl dispatch --instace 0 'hl.dsp.submap("reset")'`
 
 You can also set the same keybind to perform multiple actions, such as resize and close the submap, like so:
 
@@ -344,8 +350,8 @@ hl.bind("ALT + R", hl.dsp.submap("resize"))
 
 hl.define_submap("resize", function()
     hl.bind("right", function()
-        hl.window.resize({ x = 10, y = 0, relative = true })
-        hl.dsp.submap("reset")
+        hl.dispatch(hl.dsp.window.resize({ x = 10, y = 0, relative = true }))
+        hl.dispatch(hl.dsp.submap("reset"))
     end)
 end)
 ```

@@ -38,8 +38,7 @@ For additional options, see [module options](https://search.nixos.org/options?ch
 
 ## Home Manager module
 
-Read [[Hyprland on Home Manager]]
-.
+Read [[Hyprland on Home Manager]].
 
 For the adventurous, [@spikespaz](https://github.com/spikespaz) has made a Hyprland module that can be used in Home Manager and NixOS. It can be found [here](https://github.com/hyprland-community/hyprnix).
 

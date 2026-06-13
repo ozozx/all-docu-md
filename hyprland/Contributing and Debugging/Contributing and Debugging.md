@@ -17,7 +17,7 @@ For issues, please see [the guidelines](https://github.com/hyprwm/Hyprland/blob/
 
 ### Required packages
 
-See [[Installation#Manual|manual build]](https://wiki.hypr.land/Getting-Started/Installation/#manual-manual-build) for deps.
+See [[Installation#Manual|manual build]] for deps.
 
 ### Recommended, CMake
 

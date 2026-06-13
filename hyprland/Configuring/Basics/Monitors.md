@@ -224,7 +224,8 @@ hl.monitor({ output = "eDP-1", mode = "2880x1800@90", position = "0x0", scale = 
 ```
 
 > [!WARNING]
-> Colors registered in Hyprland (e.g. the border color) do _not_ support 10 bit. Some applications do _not_ support screen capture with 10 bit enabled.
+> Colors registered in Hyprland (e.g. the border color) do _not_ support 10 bit.
+> Some applications do _not_ support screen capture with 10 bit enabled.
 
 ### Color management presets
 
@@ -246,7 +247,7 @@ hdr     - wide color gamut and HDR PQ transfer function (experimental)
 hdredid - same as hdr with edid primaries (experimental)
 ```
 
-Fullscreen HDR is possible without the `hdr` cm setting if `render:cm_fs_passthrough` is enabled.
+Fullscreen HDR is possible without the `hdr` cm setting if `render:cm_auto_hdr` is enabled.
 
 Use `sdrbrightness` and `sdrsaturation` to control SDR brightness and saturation in HDR mode. The default for both values is `1.0`. Typical brightness value should be in the `1.0 ... 2.0` range.
 
