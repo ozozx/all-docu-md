@@ -21,13 +21,6 @@ hl.bind("SUPER + SHIFT + Q", hl.dsp.exec_cmd("firefox"))
 
 will bind opening Firefox to <key>SUPER</key> + <key>SHIFT</key> + <key>Q</key>
 
-> [!NOTE]
-> For binding keys without a modkey, leave it empty:
-> 
-> ```lua
-> hl.bind("Print", hl.dsp.exec_cmd("grim"))
-> ```
-
 _The dispatcher list can be found in [[Dispatchers#Dispatcher List|Dispatchers]]._
 
 You can also put a lua function if you prefer as your bind dispatcher:
@@ -87,6 +80,7 @@ Available flags:
 | `dont_inhibit` | Bypasses the app's requests to inhibit keybinds. |
 | `submap_universal` | Will be active no matter the submap. |
 | `device` | Allow binds to be set per device. See [Per-Device Binds](#per-device-binds) |
+| `allow_input_capture` | When input is captured by a client, this bind will still be processed. |
 
 Example Usage:
 
@@ -118,8 +112,8 @@ hl.bind("SUPER + mouse:272", hl.dsp.exec_cmd("amongus"))  -- bind `exec amogus` 
 To only bind modkeys, you need to use the TARGET modmask (with the activating mod) and the `r` flag, e.g.:
 
 ```lua
--- bind `exec amongus` to SUPER + ALT.
-hl.bind("SUPER + ALT + ALT_L", hl.dsp.exec_cmd("amongus"), { release = true })
+-- bind `exec amongus` to ALT_L.
+hl.bind("ALT + ALT_L", hl.dsp.exec_cmd("amongus"), { release = true })
 ```
 
 ### Mouse wheel
@@ -340,7 +334,7 @@ end)
 > [!WARNING]
 > Do not forget a keybind (`escape`, in this case) to reset the keymap while inside it!
 >
-> If you get stuck inside a keymap, you can use `hyprctl dispatch 'hl.dsp.submap("reset")` to go back.
+> If you get stuck inside a keymap, you can use `hyprctl dispatch 'hl.dsp.submap("reset")'` to go back.
 > If you do not have a terminal open, open a new tty and use the --instance flag to select which instance of hyprland to operate on (if you only have one running this is 0). For example: `hyprctl dispatch --instace 0 'hl.dsp.submap("reset")'`
 
 You can also set the same keybind to perform multiple actions, such as resize and close the submap, like so:
@@ -438,7 +432,7 @@ The easiest way to accomplish this is to set this using XKB settings, for exampl
 hl.config({
     input =  {
 	kb_layout = "us,cz",
-	kb_variant = "qwerty",
+	kb_variant = ",qwerty",
 	kb_options = "grp:alt_shift_toggle"
     }
 })

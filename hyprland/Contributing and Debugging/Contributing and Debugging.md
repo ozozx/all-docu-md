@@ -27,8 +27,6 @@ I've attached a [example/launch.json](https://github.com/hyprwm/Hyprland/blob/ma
 
 With that, you can build in debug, go to the debugging tab and hit `(gdb) Launch`.
 
-_note:_ You probably want to set `watchdog_timeout = 0` in the debug {} section of your config. Otherwise Hyprland will notice its hanging when you hit a breakpoint and it will crash after you continue out of it.
-
 ### Custom, CLI
 
 `make debug`

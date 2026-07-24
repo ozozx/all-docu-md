@@ -13,7 +13,7 @@ This page lists commonly used tools for taking screenshots and recording the scr
 
 ### grim and swappy
 
-[`grim`](https://sr.ht/~emersion/grim/) is a simple Wayland screenshot tool. It is commonly used with [`slurp`](https://github.com/emersion/slurp) for area selection and [`swappy`](https://github.com/jtheoof/swappy) for annotations.
+[`grim`](https://gitlab.freedesktop.org/emersion/grim) is a simple Wayland screenshot tool. It is commonly used with [`slurp`](https://github.com/emersion/slurp) for area selection and [`swappy`](https://github.com/jtheoof/swappy) for annotations.
 
 For example, to select an area and open it in `swappy`:
 

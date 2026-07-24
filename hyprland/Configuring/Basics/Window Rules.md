@@ -55,7 +55,7 @@ The supported fields for the `match` table are:
 | tag | \[name\] | Windows with matching `tag`. |
 | xwayland | \[bool\] | Xwayland windows. |
 | float | \[bool\] | Floating windows. |
-| fullscreen | \[bool\] | Fullscreen windows. |
+| fullscreen | \[bool\] | Fullscreen (covering or non-covering) windows. |
 | pin | \[bool\] | Pinned windows. |
 | focus | \[bool\] | Currently focused window. |
 | group | \[bool\] | Grouped windows. |
@@ -87,7 +87,19 @@ If you want to _negate_ a RegEx, as in pass only when the RegEx _fails_, you can
 Static effects are evaluated once when the window is opened and never again. This essentially means that it is always the `initialTitle` and `initialClass` which will be found when matching on `title` and `class`, respectively.
 
 > [!WARNING]
-> It is not possible to `float` (or any other static rule) a window based on a change in the `title` after the window has been created. This applies to all static effects listed here.
+> It is not possible to `float` (or any other static rule) a window based on a
+> change in the `title` after the window has been created. This applies to all
+> static effects listed here.
+> Instead, use a [dispatch](../Dispatchers#window-1) triggered by an
+> [event](../../Advanced-and-Cool/Expanding-functionality#events) listener to
+> apply the effect after the window has been created:
+> ```lua
+> hl.on("window.title", function(w)
+> 	if w ~= nil and w.title == "foo" then
+> 		hl.dispatch(hl.dsp.window.float({ action = "set" }))
+> 	end
+> end)
+> ```
 
 | Effect | Argument | Description |
 | ---- | ----------- | --- |
@@ -96,7 +108,7 @@ Static effects are evaluated once when the window is opened and never again. Thi
 | fullscreen | boolean | Fullscreens a window. |
 | maximize | boolean | Maximizes a window. |
 | fullscreen_state | string | Sets the fullscreen mode, e.g. `"1 2"` (internal client). Values: `0` none, `1` maximize, `2` fullscreen, `3` maximize and fullscreen. |
-| move | string | Moves a floating window to a given coordinate, monitor-local. E.g. `{100, 200}` or `{"cursor_x-(window_w*0.5))", "(cursor_y-(window_h*0.5))"}`. |
+| move | string | Moves a floating window to a given coordinate, monitor-local. E.g. `{100, 200}` or `{"(cursor_x-(window_w*0.5))", "(cursor_y-(window_h*0.5))"}`. |
 | size | string | Resizes a floating window. E.g. `{800, 600}` or `{"(monitor_w*0.5)", "(monitor_h*0.5)"}`. |
 | center | boolean | If the window is floating, will center it on the monitor. |
 | pseudo | boolean | Pseudotiles a window. |
@@ -105,7 +117,7 @@ Static effects are evaluated once when the window is opened and never again. Thi
 | no_initial_focus | boolean | Disables the initial focus to the window. |
 | pin | boolean | Pins the window (i.e. show it on all workspaces). _Note: floating only_. |
 | group | string | Sets window group properties. See [[#`group` window rule options\|group options]] below. |
-| suppress_event | string | Ignores specific events. Space-separated: `"fullscreen"`, `"maximize"`, `"activate"`, `"activatefocus"`, `"fullscreenoutput"`. |
+| suppress_event | string | Ignores specific events. Space-separated: `"fullscreen"`, `"maximize"`, `"activate"`, `"activatefocus"`, `"fullscreenoutput"`, `"x11configurerequest"`. |
 | content | string | Sets content type: `"none"`, `"photo"`, `"video"`, or `"game"`. |
 | no_close_for | integer | Makes the window uncloseable with `killactive` for a given number of ms on open. |
 | scrolling_width | number | Set column width for window when starting on a workspace with the scrolling layout. |

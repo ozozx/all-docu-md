@@ -34,4 +34,4 @@ GUI wallpaper manager that allows to visually choose the static or animated wall
 
 ## wallrizz
 
-TUI wallpaper manager that allows to visually choose and apply the desktop wallpaper. It supports `swww`, `hyprpaper` and more as backend on Wayland. [Github](https://github.com/5hubham5ingh/WallRizz)
+TUI wallpaper manager that allows to visually choose and apply the desktop wallpaper. It supports `awww`, `hyprpaper` and more as backend on Wayland. [Github](https://github.com/5hubham5ingh/WallRizz)

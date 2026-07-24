@@ -29,8 +29,8 @@ It is _highly_ recommended you use the Hyprland Plugin Manager, `hyprpm`. For ma
 > [!NOTE]
 > If you are using [[Permissions|permission management]], you should allow hyprpm to load plugins by adding this to your config:
 >
-> ```ini
-> permission = /usr/(bin|local/bin)/hyprpm, plugin, allow
+> ```lua
+> hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 > ```
 >
 > otherwise you'll get a popup asking for permission every time hyprpm tries to load a plugin.

@@ -82,7 +82,7 @@ hl.gesture({
   fingers = 3,
   direction = "up",
   action = function()
-    hl.notification.create({ text = "I just swiped on my trackpad!", duration = 5000, icon = "ok" })
+    hl.notification.create({ text = "I just swiped on my trackpad!", timeout = 5000, icon = "ok" })
   end
 })
 ```
@@ -90,13 +90,75 @@ hl.gesture({
 An example of a named function:
 ```lua
 local swipe = function()
-  hl.notification.create({ text = "I just swiped on my trackpad!", duration = 5000, icon = "ok" })
+  hl.notification.create({ text = "I just swiped on my trackpad!", timeout = 5000, icon = "ok" })
 end
 
 hl.gesture({
   fingers = 3,
   direction = "up",
   action = swipe
+})
+```
+
+#### Live lua gestures
+
+For live gestures, i.e. ones that react to the gesture state, pass a table instead of a lambda,
+which has `start`, `update` and `finish` methods.
+
+The `start` and `update` methods are passed a table with the following fields:
+
+| Field | Type | Description |
+| --- | --- | --- |
+| type | string | Either `swipe` or `pinch` |
+| time_ms | integer | The timestamp at which the even occurred, measured from when the system was booted |
+| fingers | integer | Number of fingers (2–9) |
+| delta.x | float | Horizontal motion relative to the last update. Right motion is positive, left is negative |
+| delta.y | float | Vertical motion relative to the last update. Downwards motion is positive, upwards is negative |
+| scale | float | The change in size of the finger arrangement, relative to the start of the gesture. Spread is positive, pinch is negative. `Nil` if the gesture type is not `pinch` |
+| rotation | float | The change in angle of the finger arrangement, relative to the last update. Clockwise is positive, counterclockwise is negative. `Nil` if the gesture type is not `pinch` |
+
+The `finish` method is passed a table with the following fields:
+
+| Field | Type | Description |
+| --- | --- | --- |
+| type | string | Either `swipe` or `pinch` |
+| time_ms | integer | The timestamp at which the even occurred, measured from when the system was booted |
+| cancelled | boolean | True if the gesture was ended abnormally by the backend. False otherwise |
+
+For example:
+
+```lua
+-- Output all events as notifications, for testing
+hl.gesture({
+  fingers = 3,
+  direction = "horizontal",
+  action = {
+    start = function(e) hl.notification.create({ text = "start: type=" .. e.type .. " time_ms=" .. e.time_ms .. " fingers=" .. e.fingers .. " delta=(" .. e.delta.x .. ", " .. e.delta.y .. ")", timeout = 1000, icon = 1}) end,
+    update = function(e) hl.notification.create({ text = "update: type=" .. e.type .. " time_ms=" .. e.time_ms .. " fingers=" .. e.fingers .. " delta=(" .. e.delta.x .. ", " .. e.delta.y .. ")", timeout = 1000, icon = 1}) end,
+    finish = function(e) hl.notification.create({ text = "finish: type=" .. e.type .. " time_ms=" .. e.time_ms .. " cancelled=" .. tostring(e.cancelled), timeout = 1000, icon = 1}) end
+  }
+})
+
+-- Output all events as notifications, for testing
+hl.gesture({
+  fingers = 3,
+  direction = "pinch",
+  action = {
+    start = function(e) hl.notification.create({ text = "start: type=" .. e.type .. " time_ms=" .. e.time_ms .. " fingers=" .. e.fingers .. " delta=(" .. e.delta.x .. ", " .. e.delta.y .. ") scale=" .. e.scale .. " rotation=" .. e.rotation, timeout = 1000, icon = 1}) end,
+    update = function(e) hl.notification.create({ text = "update: type=" .. e.type .. " time_ms=" .. e.time_ms .. " fingers=" .. e.fingers .. " delta=(" .. e.delta.x .. ", " .. e.delta.y .. ") scale=" .. e.scale .. " rotation=" .. e.rotation, timeout = 1000, icon = 1}) end,
+    finish = function(e) hl.notification.create({ text = "finish: type=" .. e.type .. " time_ms=" .. e.time_ms .. " cancelled=" .. tostring(e.cancelled), timeout = 1000, icon = 1}) end
+  }
+})
+
+-- Adjust volume
+local volume_gesture = function(change) hl.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ " .. math.abs(change) .. "%" .. (change<0 and "-" or "+")) end
+hl.gesture({
+  fingers = 3
+  direction = "vertical",
+  action = {
+    start = function(e) volume_gesture(-0.25 * e.delta.y) end,
+    update = function(e) volume_gesture(-0.25 * e.delta.y) end
+  },
 })
 ```
 

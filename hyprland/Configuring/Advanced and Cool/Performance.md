@@ -20,7 +20,7 @@ The TLP defaults are rather aggressive, setting `INTEL_GPU_MIN_FREQ_ON_AC` and/o
 
 **_Useful Optimizations_**:
 
-- `hl.config({ decoration = { blur { enabled = false } } })` and `hl.config({ decoration = { shadow = { enabled = false } } })` to disable fancy but battery hungry effects.
+- `hl.config({ decoration = { blur = { enabled = false } } })` and `hl.config({ decoration = { shadow = { enabled = false } } })` to disable fancy but battery hungry effects.
 
 ## My games work poorly, especially proton ones
 

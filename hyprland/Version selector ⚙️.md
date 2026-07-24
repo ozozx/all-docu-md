@@ -1,6 +1,7 @@
 Select your preferred wiki version below:
 
 - [Latest Git](https://wiki.hypr.land/)
+- [v0.56.0](https://wiki.hypr.land/0.56.0/)
 - [v0.55.0](https://wiki.hypr.land/0.55.0/)
 - [v0.54.0](https://wiki.hypr.land/0.54.0/)
 - [v0.53.0](https://wiki.hypr.land/0.53.0/)

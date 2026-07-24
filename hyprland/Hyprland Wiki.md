@@ -1,6 +1,6 @@
 ---
 subpages:
-  - "[[hyprland/Getting Started/Getting Started]]"
+  - "[[hyprland/Getting Started/Getting Started|Getting Started]]"
   - "[[Configuring]]"
   - "[[hyprland/Useful Utilities/Hypr Ecosystem|Hypr Ecosystem]]"
   - "[[Useful Utilities]]"

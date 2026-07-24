@@ -22,7 +22,7 @@ For more info regarding configuration, see [The Waybar Wiki](https://github.com/
 
 Type `waybar` into your terminal. In order to have Waybar launch alongside Hyprland, add `waybar` to your hyprland config's autostarts.
 
-Waybar also provides a systemd service. If you use Hyprland with [uwsm](../../Useful-Utilities/Systemd-start), you can enable it, using the following command.
+Waybar also provides a systemd service. If you use Hyprland with [[Systemd start|uwsm]], you can enable it, using the following command.
 
 ```ini
 systemctl --user enable --now waybar.service
@@ -41,8 +41,8 @@ Since a lot of configuration options from `sway/workspaces` are missing, you sho
 ```json
 "hyprland/workspaces": {
      "format": "{icon}",
-     "on-scroll-up": "hyprctl dispatch workspace e+1",
-     "on-scroll-down": "hyprctl dispatch workspace e-1"
+     "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e+1\"})' ",
+     "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e-1\"})' ",
 }
 ```
 
@@ -255,5 +255,5 @@ To get started, see the [setup instructions](https://quickshell.outfoxxed.me/doc
 
 ### Blur
 
-Use the `blur` and `ignore_alpha` [layer rules](../../Configuring/Basics/Window-Rules/#layer-rules). The former enables blur, and the latter makes it ignore insufficiently opaque regions. Ideally, the value used with `ignore_alpha` is higher than the shadow opacity and lower than the bar/menu content's opacity. Additionally, if it has transparent popups, you can use the `blur_popups` rule.
+Use the `blur` and `ignore_alpha` [[Window Rules#Layer Rules|layer rules]]. The former enables blur, and the latter makes it ignore insufficiently opaque regions. Ideally, the value used with `ignore_alpha` is higher than the shadow opacity and lower than the bar/menu content's opacity. Additionally, if it has transparent popups, you can use the `blur_popups` rule.
 

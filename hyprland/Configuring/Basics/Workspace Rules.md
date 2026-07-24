@@ -33,7 +33,7 @@ Props:
 - `n[bool]`, `n[s:string]`, `n[e:string]` - named actions. `n[bool]` -> whether a workspace is a named workspace, `s` and `e` are starts and ends with respectively
 - `m[monitor]` - Monitor selector
 - `w[(flags)A-B]`, `w[(flags)X]` - Prop for window counts on the workspace. A-B is an inclusive range, X is a specific number. Flags can be omitted. It can be `t` for tiled-only, `f` for floating-only, `g` to count groups instead of windows, `v` to count only visible windows, and `p` to count only pinned windows.
-- `f[-1]`, `f[0]`, `f[1]`, `f[2]` - fullscreen state of the workspace. `-1`: no fullscreen, `0`: fullscreen, `1`: maximized, `2`, fullscreen without fullscreen state sent to the window.
+- `f[-1]`, `f[0]`, `f[1]`, `f[2]` - fullscreen state of the workspace. `-1`: no fullscreen, `0`: fullscreen, `1`: maximized, `2`, fullscreen without fullscreen state sent to the window. Only matches workspaces with covering FS windows.
 
 ## Rules
 
@@ -41,8 +41,9 @@ Props:
 | --- | --- | --- |
 | monitor | Binds a workspace to a monitor. See [[#Syntax\|syntax]] and [[Monitors]]. | string |
 | default | Whether this workspace should be the default workspace for the given monitor | bool |
-| gaps_in | Set the gaps between windows (equivalent to [[hyprland/Configuring/Basics/Variables#General\|General->gaps_in]]) | int |
-| gaps_out | Set the gaps between windows and monitor edges (equivalent to [[hyprland/Configuring/Basics/Variables#General\|General->gaps_out]]) | int |
+| gaps_in | Set the gaps between windows (equivalent to [[hyprland/Configuring/Basics/Variables#General\|General->gaps_in]]) | css_gaps |
+| gaps_out | Set the gaps between windows and monitor edges (equivalent to [[hyprland/Configuring/Basics/Variables#General\|General->gaps_out]]) | css_gaps |
+| float_gaps | Set the gaps for floating windows (equivalent to [[hyprland/Configuring/Basics/Variables#General\|General->float_gaps]]) | css_gaps |
 | border_size | Set the border size around windows (equivalent to [[hyprland/Configuring/Basics/Variables#General\|General->border_size]]) | int |
 | no_border | Whether to disable borders | bool |
 | no_shadow | Whether to disable shadows | bool |
@@ -53,6 +54,7 @@ Props:
 | default_name | A default name for the workspace. | string |
 | layout | The layout to use for this workspace. | string |
 | animation | The animation style to use for this workspace. | string |
+| layout_opts | A table of layout-specific options for this workspace. Keys and values depend on the layout. | table |
 
 ## Examples
 
